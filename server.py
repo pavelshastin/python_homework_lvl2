@@ -50,17 +50,17 @@ class Server:
 
     def __init__(self, addr, port):
         self.address = (addr, port)
+        self.clients = []
 
 
-
-    def __new_listen_socket(self, address):
+    def new_listen_socket(self, address):
         s = socket(AF_INET, SOCK_STREAM)
         s.bind((addr, port))
         s.listen(5)
         s.settimeout(0.2)
         return s
 
-    def __read_requests(self, readables):
+    def read_requests(self, readables):
         requests = {}
 
         for sock in readables:
@@ -72,12 +72,12 @@ class Server:
                 print("request", "Client {} {} dropped connection".format(sock.fileno(),
                                 sock.getpeername()))
 
-                clients.remove(sock)
-
+                self.clients.remove(sock)
 
         return requests
 
-    def __write_response(self, requests, writables):
+
+    def write_response(self, requests, writables):
 
         for sock in writables:
             if sock in requests:
@@ -89,12 +89,11 @@ class Server:
                 except:
                     print("response", "Client {} dropped connection".format(sock.getpeername()))
                     sock.close()
-                    clients.remove(sock)
+                    self.clients.remove(sock)
 
 
     def run(self):
-        sock = self.__new_listen_socket(self.address)
-        clients = []
+        sock = self.new_listen_socket(self.address)
         starttime = time.time()
 
         print("Server running...")
@@ -107,20 +106,20 @@ class Server:
                 pass
             else:
                print("Connection with {}".format(str(addr)))
-               clients.append(conn)
+               self.clients.append(conn)
             finally:
                 wait = 0
                 w = []
                 r = []
                 try:
-                    r, w, e = select.select(clients, clients, [], wait)
+                    r, w, e = select.select(self.clients, self.clients, [], wait)
                 except:
                     pass
 
 
-            requests = self.__read_requests(r)
+            requests = self.read_requests(r)
 
-            self.__write_response(requests, w)
+            self.write_response(requests, w)
 
 
 if __name__ == "__main__":
