@@ -8,34 +8,22 @@ import select
 import sys
 import time
 
-args = sys.argv[1:]
-
-addr = ""
-port = 7777
-
-try:
-    addr = str(args[args.index("-a") + 1])
-    port = int(args[args.index("-p") + 1])
-except:
-    pass
-
-
-def my_func(x):
-    return x*x
-
 
 class Server:
     __responses = {
         200: {
             "response": 200,
-            "alert": ""
+            "time": time.time(),
+            "alert": {}
         },
         402: {
             "response": 402,
+            "time": time.time(),
             "error": "Wrong password or username"
         },
         409: {
             "response": 409,
+            "time": time.time(),
             "error": "Someone has already connected with given username"
         }
     }
@@ -80,9 +68,13 @@ class Server:
     def write_response(self, requests, writables):
 
         for sock in writables:
-            if sock in requests:
+
+            if len(requests) != 0:
+                print(list(requests.values()))
                 try:
-                   self.__responses[200]["Alert"] = requests[sock]
+
+                   self.__responses[200]["alert"] = list(requests.values())
+                   print("Write: ", self.__responses[200])
 
                    sock.send(json.dumps(self.__responses[200]).encode("ascii"))
 
@@ -116,12 +108,29 @@ class Server:
                 except:
                     pass
 
+            # if r:
+            #     print("Readable: ", r)
+            #
+            # if w:
+            #     print("Writable: ", w)
 
             requests = self.read_requests(r)
 
             self.write_response(requests, w)
 
 
+
+
 if __name__ == "__main__":
+    addr = ""
+    port = 7777
+
+    try:
+        addr = str(sys.argv[sys.argv.index("-a") + 1])
+        port = int(sys.argv[sys.argv.index("-p") + 1])
+    except:
+        pass
+
+
     server = Server(addr, port)
     server.run()
