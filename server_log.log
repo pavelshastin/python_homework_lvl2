@@ -1,0 +1,137 @@
+2019-02-19 13:42:31,912 INFO       server __init__ Creating an instance of Server
+2019-02-19 13:42:31,913 INFO       server new_listen_socket Server is listening on  port 7777
+2019-02-19 13:42:32,113 CRITICAL   server run timed out
+2019-02-19 13:42:32,315 CRITICAL   server run timed out
+2019-02-19 13:42:32,517 CRITICAL   server run timed out
+2019-02-19 13:42:32,718 CRITICAL   server run timed out
+2019-02-19 13:42:32,919 CRITICAL   server run timed out
+2019-02-19 13:42:33,120 CRITICAL   server run timed out
+2019-02-19 13:42:33,321 CRITICAL   server run timed out
+2019-02-19 13:42:33,521 CRITICAL   server run timed out
+2019-02-19 13:42:33,724 CRITICAL   server run timed out
+2019-02-19 13:42:33,925 CRITICAL   server run timed out
+2019-02-19 13:42:34,125 CRITICAL   server run timed out
+2019-02-19 13:42:34,325 CRITICAL   server run timed out
+2019-02-19 13:42:34,525 CRITICAL   server run timed out
+2019-02-19 13:42:34,726 CRITICAL   server run timed out
+2019-02-19 13:42:34,935 CRITICAL   server run timed out
+2019-02-19 13:42:35,137 CRITICAL   server run timed out
+2019-02-19 13:42:35,337 CRITICAL   server run timed out
+2019-02-19 13:42:35,538 CRITICAL   server run timed out
+2019-02-19 13:42:35,738 CRITICAL   server run timed out
+2019-02-19 13:42:35,939 CRITICAL   server run timed out
+2019-02-19 13:42:36,139 CRITICAL   server run timed out
+2019-02-19 13:42:36,339 CRITICAL   server run timed out
+2019-02-19 13:42:36,540 CRITICAL   server run timed out
+2019-02-19 13:42:36,741 CRITICAL   server run timed out
+2019-02-19 13:42:36,941 CRITICAL   server run timed out
+2019-02-19 13:42:37,143 CRITICAL   server run timed out
+2019-02-19 13:42:37,344 CRITICAL   server run timed out
+2019-02-19 13:42:37,545 CRITICAL   server run timed out
+2019-02-19 13:42:37,745 CRITICAL   server run timed out
+2019-02-19 13:42:37,946 CRITICAL   server run timed out
+2019-02-19 13:42:38,146 CRITICAL   server run timed out
+2019-02-19 13:42:38,348 CRITICAL   server run timed out
+2019-02-19 13:42:38,548 CRITICAL   server run timed out
+2019-02-19 13:42:38,749 CRITICAL   server run timed out
+2019-02-19 13:42:38,950 CRITICAL   server run timed out
+2019-02-19 13:42:39,150 CRITICAL   server run timed out
+2019-02-19 13:42:39,350 CRITICAL   server run timed out
+2019-02-19 13:42:39,551 CRITICAL   server run timed out
+2019-02-19 13:42:39,752 CRITICAL   server run timed out
+2019-02-19 13:42:39,952 CRITICAL   server run timed out
+2019-02-19 13:42:40,152 CRITICAL   server run timed out
+2019-02-19 13:42:40,353 CRITICAL   server run timed out
+2019-02-19 13:42:40,555 CRITICAL   server run timed out
+2019-02-19 13:42:40,755 CRITICAL   server run timed out
+2019-02-19 13:42:40,956 CRITICAL   server run timed out
+2019-02-19 13:42:41,156 CRITICAL   server run timed out
+2019-02-19 13:42:41,357 CRITICAL   server run timed out
+2019-02-19 13:42:41,557 CRITICAL   server run timed out
+2019-02-19 13:42:41,758 CRITICAL   server run timed out
+2019-02-19 13:42:41,958 CRITICAL   server run timed out
+2019-02-19 13:42:42,159 CRITICAL   server run timed out
+2019-02-19 13:42:42,360 CRITICAL   server run timed out
+2019-02-19 13:42:42,560 CRITICAL   server run timed out
+2019-02-19 13:42:42,761 CRITICAL   server run timed out
+2019-02-19 13:42:42,961 CRITICAL   server run timed out
+2019-02-19 13:42:43,162 CRITICAL   server run timed out
+2019-02-19 13:42:43,362 CRITICAL   server run timed out
+2019-02-19 13:42:43,562 CRITICAL   server run timed out
+2019-02-19 13:42:43,763 CRITICAL   server run timed out
+2019-02-19 13:42:43,964 CRITICAL   server run timed out
+2019-02-19 13:42:44,164 CRITICAL   server run timed out
+2019-02-19 13:42:44,364 CRITICAL   server run timed out
+2019-02-19 13:42:44,566 CRITICAL   server run timed out
+2019-02-19 13:42:44,766 CRITICAL   server run timed out
+2019-02-19 13:42:44,967 CRITICAL   server run timed out
+2019-02-19 13:42:45,167 CRITICAL   server run timed out
+2019-02-19 13:42:45,369 CRITICAL   server run timed out
+2019-02-19 13:42:45,569 CRITICAL   server run timed out
+2019-02-19 13:42:45,771 CRITICAL   server run timed out
+2019-02-19 13:42:45,971 CRITICAL   server run timed out
+2019-02-19 13:42:46,172 CRITICAL   server run timed out
+2019-02-19 13:42:46,372 CRITICAL   server run timed out
+2019-02-19 13:42:46,572 CRITICAL   server run timed out
+2019-02-19 13:42:46,784 CRITICAL   server run timed out
+2019-02-19 13:42:46,984 CRITICAL   server run timed out
+2019-02-19 13:42:47,184 CRITICAL   server run timed out
+2019-02-19 13:42:47,385 CRITICAL   server run timed out
+2019-02-19 13:42:47,586 CRITICAL   server run timed out
+2019-02-19 13:42:47,789 CRITICAL   server run timed out
+2019-02-19 13:42:47,989 CRITICAL   server run timed out
+2019-02-19 13:42:48,189 CRITICAL   server run timed out
+2019-02-19 13:42:48,390 CRITICAL   server run timed out
+2019-02-19 13:42:48,591 CRITICAL   server run timed out
+2019-02-19 13:42:48,791 CRITICAL   server run timed out
+2019-02-19 13:42:48,991 CRITICAL   server run timed out
+2019-02-19 13:42:49,192 CRITICAL   server run timed out
+2019-02-19 13:42:49,392 CRITICAL   server run timed out
+2019-02-19 13:42:49,593 CRITICAL   server run timed out
+2019-02-19 13:42:49,793 CRITICAL   server run timed out
+2019-02-19 13:42:49,993 CRITICAL   server run timed out
+2019-02-19 13:42:50,194 CRITICAL   server run timed out
+2019-02-19 13:42:50,394 CRITICAL   server run timed out
+2019-02-19 13:42:50,595 CRITICAL   server run timed out
+2019-02-19 13:42:50,796 CRITICAL   server run timed out
+2019-02-19 13:42:51,086 CRITICAL   server run timed out
+2019-02-19 13:42:51,288 CRITICAL   server run timed out
+2019-02-19 13:42:51,489 CRITICAL   server run timed out
+2019-02-19 13:42:51,689 CRITICAL   server run timed out
+2019-02-19 13:42:51,889 CRITICAL   server run timed out
+2019-02-19 13:42:52,090 CRITICAL   server run timed out
+2019-02-19 13:42:52,291 CRITICAL   server run timed out
+2019-02-19 13:42:52,491 CRITICAL   server run timed out
+2019-02-19 13:42:52,691 CRITICAL   server run timed out
+2019-02-19 13:42:52,892 CRITICAL   server run timed out
+2019-02-19 13:42:53,092 CRITICAL   server run timed out
+2019-02-19 13:42:53,293 CRITICAL   server run timed out
+2019-02-19 13:42:53,494 CRITICAL   server run timed out
+2019-02-19 13:42:53,694 CRITICAL   server run timed out
+2019-02-19 13:42:53,894 CRITICAL   server run timed out
+2019-02-19 13:42:54,095 CRITICAL   server run timed out
+2019-02-19 13:42:54,296 CRITICAL   server run timed out
+2019-02-19 13:42:54,496 CRITICAL   server run timed out
+2019-02-19 13:42:54,697 CRITICAL   server run timed out
+2019-02-19 13:42:54,898 CRITICAL   server run timed out
+2019-02-19 13:42:55,099 CRITICAL   server run timed out
+2019-02-19 13:42:55,299 CRITICAL   server run timed out
+2019-02-19 13:42:55,499 CRITICAL   server run timed out
+2019-02-19 13:42:55,700 CRITICAL   server run timed out
+2019-02-19 13:42:55,900 CRITICAL   server run timed out
+2019-02-19 13:42:56,101 CRITICAL   server run timed out
+2019-02-19 13:42:56,302 CRITICAL   server run timed out
+2019-02-19 13:46:05,988 INFO       server __init__ Creating an instance of Server
+2019-02-19 13:46:05,989 INFO       server new_listen_socket Server is listening on  port 7777
+Tue Feb 19 13:46:37 2019 Function read_requests is called by run-function
+Tue Feb 19 13:46:37 2019 Function read_requests finished with result: {<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61506)>: {'action': 'msg', 'time': 1550573197.5685337, 'to': 'Misha', 'from': 'Pavel', 'encoding': 'ascii', 'message': 'Have a beer?'}}
+Tue Feb 19 13:46:37 2019 Function write_response is called by run-function
+Tue Feb 19 13:46:37 2019 Function write_response finished with result: None
+2019-02-19 13:49:16,245 INFO       server __init__ Creating an instance of Server
+2019-02-19 13:49:16,246 INFO       server new_listen_socket Server is listening on  port 7777
+2019-02-19 13:49:27,468 INFO       server run Connection with ('127.0.0.1', 61512)
+2019-02-19 13:49:31,901 INFO       server run Connection with ('127.0.0.1', 61514)
+Tue Feb 19 13:49:41 2019 Function read_requests is called by run-function
+Tue Feb 19 13:49:41 2019 Function read_requests finished with result: {<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61512)>: {'action': 'msg', 'time': 1550573381.543488, 'to': 'Masdha', 'from': 'Pavel', 'encoding': 'ascii', 'message': 'Have a date?'}}
+Tue Feb 19 13:49:41 2019 Function write_response is called by run-function
+Tue Feb 19 13:49:41 2019 Function write_response finished with result: None

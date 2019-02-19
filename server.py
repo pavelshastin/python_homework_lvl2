@@ -8,6 +8,8 @@ import select
 import sys
 import time
 
+import logging
+import log_config as log
 
 class Server:
     __responses = {
@@ -39,6 +41,13 @@ class Server:
     def __init__(self, addr, port):
         self.address = (addr, port)
         self.clients = []
+        self.logger = logging.getLogger(self.__class__.__name__)
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.INFO)
+        _format = logging.Formatter("%(asctime)s %(funcName)s %(message)s")
+        ch.setFormatter(_format)
+        self.logger.addHandler(ch)
+        self.logger.info("Creating an instance of " + self.__class__.__name__)
 
 
     def new_listen_socket(self, address):
@@ -46,8 +55,12 @@ class Server:
         s.bind((addr, port))
         s.listen(5)
         s.settimeout(0.2)
+
+        self.logger.info("Server is listening on %s port %d", addr, port)
         return s
 
+
+    @log.log
     def read_requests(self, readables):
         requests = {}
 
@@ -56,48 +69,46 @@ class Server:
                 data = sock.recv(1024).decode("ascii")
                 requests[sock] = json.loads(data)
 
-            except:
-                print("request", "Client {} {} dropped connection".format(sock.fileno(),
-                                sock.getpeername()))
-
+            except OSError:
+                self.logger.info("Client %s %s dropped connection", sock.fileno(), sock.getpeername())
                 self.clients.remove(sock)
+            except Exception as e:
+                self.logger.error(str(e))
 
         return requests
 
-
+    @log.log
     def write_response(self, requests, writables):
 
         for sock in writables:
 
             if len(requests) != 0:
-                print(list(requests.values()))
                 try:
-
                    self.__responses[200]["alert"] = list(requests.values())
-                   print("Write: ", self.__responses[200])
 
                    sock.send(json.dumps(self.__responses[200]).encode("ascii"))
 
-                except:
-                    print("response", "Client {} dropped connection".format(sock.getpeername()))
-                    sock.close()
+                except OSError:
+                    self.logger.info("Client %s %s dropped connection", sock.fileno(), sock.getpeername())
                     self.clients.remove(sock)
+
+                except Exception as e:
+                    self.logger.error(str(e))
 
 
     def run(self):
         sock = self.new_listen_socket(self.address)
         starttime = time.time()
 
-        print("Server running...")
-
         while True:
             try:
                 conn, addr = sock.accept()
 
             except OSError as e:
-                pass
+                if str(e) != "timed out":
+                    self.logger.critical(str(e))
             else:
-               print("Connection with {}".format(str(addr)))
+               self.logger.info("Connection with %s", str(addr))
                self.clients.append(conn)
             finally:
                 wait = 0
@@ -108,15 +119,13 @@ class Server:
                 except:
                     pass
 
-            # if r:
-            #     print("Readable: ", r)
-            #
-            # if w:
-            #     print("Writable: ", w)
+            requests = None
+            if r:
+                requests = self.read_requests(r)
 
-            requests = self.read_requests(r)
-
-            self.write_response(requests, w)
+            if w and requests:
+                self.write_response(requests, w)
+                requests = None
 
 
 
@@ -131,6 +140,6 @@ if __name__ == "__main__":
     except:
         pass
 
-
     server = Server(addr, port)
     server.run()
+
