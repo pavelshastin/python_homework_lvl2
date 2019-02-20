@@ -10,8 +10,10 @@ import time
 
 import logging
 import log_config as log
+from JIMServer import JIMServer
 
-class Server:
+
+class Server(JIMServer):
     __responses = {
         200: {
             "response": 200,
@@ -41,6 +43,8 @@ class Server:
     def __init__(self, addr, port):
         self.address = (addr, port)
         self.clients = []
+        super().__init__()
+
         self.logger = logging.getLogger(self.__class__.__name__)
         ch = logging.StreamHandler()
         ch.setLevel(logging.INFO)
@@ -69,6 +73,8 @@ class Server:
                 data = sock.recv(1024).decode("ascii")
                 requests[sock] = json.loads(data)
 
+
+
             except OSError:
                 self.logger.info("Client %s %s dropped connection", sock.fileno(), sock.getpeername())
                 self.clients.remove(sock)
@@ -84,9 +90,9 @@ class Server:
 
             if len(requests) != 0:
                 try:
-                   self.__responses[200]["alert"] = list(requests.values())
+                   msg = self.OK(list(requests.values()))
 
-                   sock.send(json.dumps(self.__responses[200]).encode("ascii"))
+                   sock.send(msg.encode("ascii"))
 
                 except OSError:
                     self.logger.info("Client %s %s dropped connection", sock.fileno(), sock.getpeername())

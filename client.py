@@ -7,38 +7,18 @@ import json
 import time
 import sys
 
+from JIMClient import JIMClient
 
-class User:
+class Client(JIMClient):
     def __init__(self, name, password):
+        super().__init__(name, password)
+
         self.__name = name
         self.__password = password
 
 
-    def presence(self):
-        to_send = {
-            "action": "presence",
-            "time": time.time(),
-            "type": "status",
-            "user": {
-                "account_name": self.__name.title(),
-                "status": "Yes, I'm here"
-            }
-        }
-
-        return json.dumps(to_send)
-
-    def message(self, to, msg):
-        to_send = {
-            "action": "msg",
-            "time": time.time(),
-            "to": to.title(),
-            "from": self.__name.title(),
-            "encoding": "ascii",
-            "message": msg
-        }
-
-        return json.dumps(to_send)
-
+    def send_message(self):
+        pass
 
 
 
@@ -62,7 +42,8 @@ if __name__ == "__main__":
     #print(addr, port, w, r)
 
 
-    user = User(username, pswd)
+    user = Client(username, pswd)
+
 
     if r:
         with socket(AF_INET, SOCK_STREAM) as sock:
@@ -95,5 +76,5 @@ if __name__ == "__main__":
                     sock.close()
                     break
 
-                sock.send(user.message(send_to, msg).encode("ascii"))
+                sock.send(user.to_user(send_to, msg).encode("ascii"))
 
