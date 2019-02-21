@@ -11,39 +11,18 @@ import time
 import logging
 import log_config as log
 from JIMServer import JIMServer
+from MessageHandler import MessageHandler
+from Chat import Chat
 
 
-class Server(JIMServer):
-    __responses = {
-        200: {
-            "response": 200,
-            "time": time.time(),
-            "alert": {}
-        },
-        402: {
-            "response": 402,
-            "time": time.time(),
-            "error": "Wrong password or username"
-        },
-        409: {
-            "response": 409,
-            "time": time.time(),
-            "error": "Someone has already connected with given username"
-        }
-    }
-
-    __requests = {
-        "probe": {
-            "action": "probe",
-            "time": time.time()
-        }
-    }
-
+class Server(JIMServer, MessageHandler):
 
     def __init__(self, addr, port):
+        super().__init__()
+
+        self.chats = []
         self.address = (addr, port)
         self.clients = []
-        super().__init__()
 
         self.logger = logging.getLogger(self.__class__.__name__)
         ch = logging.StreamHandler()
@@ -71,8 +50,9 @@ class Server(JIMServer):
         for sock in readables:
             try:
                 data = sock.recv(1024).decode("ascii")
-                requests[sock] = json.loads(data)
 
+                if data:
+                    requests[sock] = self.handle_request(json.loads(data))
 
 
             except OSError:
@@ -100,6 +80,9 @@ class Server(JIMServer):
 
                 except Exception as e:
                     self.logger.error(str(e))
+
+    def add_listener(self, listener):
+        self.listeners.append(listener)
 
 
     def run(self):
@@ -146,6 +129,18 @@ if __name__ == "__main__":
     except:
         pass
 
+    #Creating chat and adding 6 users with given name
+    new_chat = Chat("new")
+    new_chat.add_user("Pavel")
+    new_chat.add_user("Sveta")
+    new_chat.add_user("Alex")
+    new_chat.add_user("Girl")
+    new_chat.add_user("Pavel_2")
+    new_chat.add_user("Me")
+
+
     server = Server(addr, port)
+    server.add_chat(new_chat)
+
     server.run()
 

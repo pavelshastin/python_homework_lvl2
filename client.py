@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
 
     user = Client(username, pswd)
-
+    user.join("new")
 
     if r:
         with socket(AF_INET, SOCK_STREAM) as sock:
@@ -57,10 +57,10 @@ if __name__ == "__main__":
                     form = json.loads(msg)
 
                     if form["response"] == 200:
-                        for m in form["alert"]:
-                            dt = time.ctime(m["time"])
-                            fr = m["from"]
-                            ms = m["message"]
+                        for m in form["alert"][0]:
+                            dt = time.ctime(form["time"])
+                            fr = m[0]
+                            ms = m[1]
                             print("{} From: {} Message: {}".format(dt, fr, ms))
 
     elif w:
@@ -69,12 +69,12 @@ if __name__ == "__main__":
             sock.connect(address)
 
             while True:
-                send_to = input("To: ")
+                send_to = input("To Chat: ")
                 msg = input("Message: ")
 
                 if msg == "quit" or send_to == "quit":
                     sock.close()
                     break
 
-                sock.send(user.to_user(send_to, msg).encode("ascii"))
+                sock.send(user.to_chat(send_to, msg).encode("ascii"))
 

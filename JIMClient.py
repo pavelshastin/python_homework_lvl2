@@ -8,6 +8,7 @@ class JIMClient:
         self.__pswd = pswd
         self.__rooms = []
 
+
     def presence(self):
         to_send = {
             "action": "presence",
@@ -34,12 +35,12 @@ class JIMClient:
         return json.dumps(to_send)
 
     def to_chat(self, room, msg):
-        if room in self.__rooms:
+        if room.upper() in self.__rooms:
 
             to_send = {
                 "action": "msg",
                 "time": time.time(),
-                "to": room,
+                "to": room.upper(),
                 "from": self.__name,
                 "message": msg
             }
@@ -61,24 +62,24 @@ class JIMClient:
 
 
     def join(self, room):
-        self.__rooms.append(room)
+        self.__rooms.append(room.upper())
 
         to_send = {
             "action": "join",
             "time": time.time(),
-            "room": room
+            "room": room.upper()
         }
 
         return json.dumps(to_send)
 
 
     def leave(self, room):
-        self.__rooms.remove(room)
+        self.__rooms.remove(room.upper())
 
         to_send = {
             "action": "join",
             "time": time.time(),
-            "room": room
+            "room": room.upper()
         }
 
         return json.dumps(to_send)

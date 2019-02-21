@@ -11,6 +11,10 @@ logging.basicConfig(
 )
 
 
+
+
+
+
 def log(func):
     def logged(*args, **kwargs):
         with open("server_log.log", "a", encoding="UTF-8") as f:
