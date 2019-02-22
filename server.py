@@ -15,13 +15,13 @@ from MessageHandler import MessageHandler
 from Chat import Chat
 
 
-class Server(JIMServer, MessageHandler):
+class Server(JIMServer):
 
-    def __init__(self, addr, port):
+    def __init__(self, addr, handler):
         super().__init__()
 
-        self.chats = []
-        self.address = (addr, port)
+        self.handler = handler
+        self.address = addr
         self.clients = []
 
         self.logger = logging.getLogger(self.__class__.__name__)
@@ -52,7 +52,7 @@ class Server(JIMServer, MessageHandler):
                 data = sock.recv(1024).decode("ascii")
 
                 if data:
-                    requests[sock] = self.handle_request(json.loads(data))
+                    requests[sock] = self.handler.handle_request(json.loads(data))
 
 
             except OSError:
@@ -138,9 +138,11 @@ if __name__ == "__main__":
     new_chat.add_user("Pavel_2")
     new_chat.add_user("Me")
 
+    req_handler = MessageHandler()
+    req_handler.add_chat(new_chat)
 
-    server = Server(addr, port)
-    server.add_chat(new_chat)
+    server = Server((addr, port), req_handler)
+
 
     server.run()
 
