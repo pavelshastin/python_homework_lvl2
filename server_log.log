@@ -1,9 +1,0 @@
-2019-02-22 07:48:46,709 INFO       server __init__ Creating an instance of Server
-2019-02-22 07:51:31,697 INFO       server __init__ Creating an instance of Server
-2019-02-22 07:51:31,699 INFO       server new_listen_socket Server is listening on  port 7777
-2019-02-22 07:51:35,773 INFO       server run Connection with ('127.0.0.1', 64777)
-2019-02-22 07:51:38,892 INFO       server run Connection with ('127.0.0.1', 64778)
-Fri Feb 22 07:51:47 2019 Function read_requests is called by run-function
-Fri Feb 22 07:51:47 2019 Function read_requests finished with result: {<socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 64778)>: [('Pavel', 'Pavel')]}
-Fri Feb 22 07:51:47 2019 Function write_response is called by run-function
-Fri Feb 22 07:51:47 2019 Function write_response finished with result: None

@@ -8,8 +8,11 @@ import time
 import sys
 
 from JIMClient import JIMClient
+from MetaClient import MetaClient
 
-class Client(JIMClient):
+
+class Client(JIMClient, metaclass=MetaClient):
+
     def __init__(self, name, password):
         super().__init__(name, password)
 
@@ -17,8 +20,41 @@ class Client(JIMClient):
         self.__password = password
 
 
-    def send_message(self):
-        pass
+    def connect(self, address):
+        s = socket(AF_INET, SOCK_STREAM)
+        s.connect(address)
+        self.sock =  s
+
+
+    def to_read(self):
+        while True:
+            msg = self.sock.recv(1024).decode("ascii")
+
+            if msg:
+                form = json.loads(msg)
+
+                if form["response"] == 200:
+                    for m in form["alert"][0]:
+                        dt = time.ctime(form["time"])
+                        fr = m[0]
+                        ms = m[1]
+                        print("{} From: {} Message: {}".format(dt, fr, ms))
+
+    def to_write(self):
+        while True:
+            send_to = input("To Chat: ")
+            msg = input("Message: ")
+
+            if msg == "quit" or send_to == "quit":
+                self.sock.close()
+                break
+
+            try:
+                self.sock.send(self.to_chat(send_to, msg).encode("ascii"))
+            except:
+                pass
+
+
 
 
 
@@ -45,36 +81,13 @@ if __name__ == "__main__":
     user = Client(username, pswd)
     user.join("new")
 
+    user.connect(address)
+
     if r:
-        with socket(AF_INET, SOCK_STREAM) as sock:
-            sock.connect(address)
+        user.to_read()
 
-            while True:
-
-                msg = sock.recv(1024).decode("ascii")
-
-                if msg:
-                    form = json.loads(msg)
-
-                    if form["response"] == 200:
-                        for m in form["alert"][0]:
-                            dt = time.ctime(form["time"])
-                            fr = m[0]
-                            ms = m[1]
-                            print("{} From: {} Message: {}".format(dt, fr, ms))
 
     elif w:
+        user.to_write()
 
-        with socket(AF_INET, SOCK_STREAM) as sock:
-            sock.connect(address)
-
-            while True:
-                send_to = input("To Chat: ")
-                msg = input("Message: ")
-
-                if msg == "quit" or send_to == "quit":
-                    sock.close()
-                    break
-
-                sock.send(user.to_chat(send_to, msg).encode("ascii"))
 

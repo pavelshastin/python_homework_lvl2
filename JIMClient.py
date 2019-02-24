@@ -47,7 +47,7 @@ class JIMClient:
 
             return json.dumps(to_send)
         else:
-            raise ValueError("You haven't join to the given chat room")
+            print("You haven't join to the given chat room")
 
     def to_user(self, to, msg):
         to_send = {

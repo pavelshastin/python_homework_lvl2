@@ -2,20 +2,24 @@
 
 """
 
-from socket import socket, AF_INET, SOCK_STREAM
+from socket import socket, AF_INET, SOCK_STREAM, SOCK_DGRAM
 import json
 import select
 import sys
 import time
 
-import logging
-import log_config as log
+
+from log_config import logger, log
 from JIMServer import JIMServer
 from MessageHandler import MessageHandler
 from Chat import Chat
+from MetaServer import MetaServer
 
 
-class Server(JIMServer):
+
+class Server(JIMServer, metaclass=MetaServer):
+    logger = logger(__name__)
+
 
     def __init__(self, addr, handler):
         super().__init__()
@@ -24,12 +28,6 @@ class Server(JIMServer):
         self.address = addr
         self.clients = []
 
-        self.logger = logging.getLogger(self.__class__.__name__)
-        ch = logging.StreamHandler()
-        ch.setLevel(logging.INFO)
-        _format = logging.Formatter("%(asctime)s %(funcName)s %(message)s")
-        ch.setFormatter(_format)
-        self.logger.addHandler(ch)
         self.logger.info("Creating an instance of " + self.__class__.__name__)
 
 
@@ -43,7 +41,7 @@ class Server(JIMServer):
         return s
 
 
-    @log.log
+    @log(logger)
     def read_requests(self, readables):
         requests = {}
 
@@ -63,7 +61,7 @@ class Server(JIMServer):
 
         return requests
 
-    @log.log
+    @log(logger)
     def write_response(self, requests, writables):
 
         for sock in writables:
@@ -81,13 +79,10 @@ class Server(JIMServer):
                 except Exception as e:
                     self.logger.error(str(e))
 
-    def add_listener(self, listener):
-        self.listeners.append(listener)
-
 
     def run(self):
         sock = self.new_listen_socket(self.address)
-        starttime = time.time()
+
 
         while True:
             try:
@@ -142,7 +137,6 @@ if __name__ == "__main__":
     req_handler.add_chat(new_chat)
 
     server = Server((addr, port), req_handler)
-
 
     server.run()
 
