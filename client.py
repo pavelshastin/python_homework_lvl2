@@ -4,12 +4,13 @@
 
 from socket import socket, AF_INET, SOCK_STREAM
 import json
-import time
+import datetime as time
 import sys
+
 
 from JIMClient import JIMClient
 from MetaClient import MetaClient
-
+from ClientStorage import ClientStorage
 
 class Client(JIMClient, metaclass=MetaClient):
 
@@ -18,6 +19,7 @@ class Client(JIMClient, metaclass=MetaClient):
 
         self.__name = name
         self.__password = password
+        self.storage = ClientStorage(name)
 
 
     def connect(self, address):
@@ -35,10 +37,11 @@ class Client(JIMClient, metaclass=MetaClient):
 
                 if form["response"] == 200:
                     for m in form["alert"][0]:
-                        dt = time.ctime(form["time"])
+                        dt = time.datetime.fromtimestamp(form["time"])
                         fr = m[0]
                         ms = m[1]
-                        print("{} From: {} Message: {}".format(dt, fr, ms))
+                        self.storage.add_message(dt, fr, ms)
+                        print("{} From: {} Message: {}".format(time.datetime.ctime(dt), fr, ms))
 
     def to_write(self):
         while True:

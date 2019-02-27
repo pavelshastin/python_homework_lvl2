@@ -1,0 +1,262 @@
+[
+    {
+        "name": "Event",
+        "record": "Perf.",
+        "date": "Date"
+    },
+    {
+        "name": "Road relay42.195 km",
+        "record": "1:57:06.00",
+        "date": "23 Nov 2005"
+    },
+    {
+        "name": "4\u00d71500 m relay",
+        "record": "14:22.22",
+        "date": "25 May 2014"
+    },
+    {
+        "name": "Distance medley relay",
+        "record": "9:15.50",
+        "date": "3 May 2015"
+    },
+    {
+        "name": "4\u00d7800 m relay",
+        "record": "7:02.43",
+        "date": "25 Aug 2006"
+    },
+    {
+        "name": "4\u00d7400 m relay",
+        "record": "2:54.29",
+        "date": "22 Aug 1993"
+    },
+    {
+        "name": "4\u00d7200 m relay",
+        "record": "1:18.63",
+        "date": "24 May 2014"
+    },
+    {
+        "name": "4\u00d7100 m relay",
+        "record": "36.84",
+        "date": "11 Aug 2012"
+    },
+    {
+        "name": "50,000 m walk (track)",
+        "record": "3:35:27.20",
+        "date": "12 Mar 2011"
+    },
+    {
+        "name": "50 km walk (road)",
+        "record": "3:32:33.00",
+        "date": "15 Aug 2014"
+    },
+    {
+        "name": "30,000 m walk (track)",
+        "record": "2:01:44.10",
+        "date": "3 Oct 1992"
+    },
+    {
+        "name": "2 hours walk (track)",
+        "record": "29,572 m",
+        "date": "3 Oct 1992"
+    },
+    {
+        "name": "20,000 m walk (track)",
+        "record": "1:17:25.60",
+        "date": "7 May 1994"
+    },
+    {
+        "name": "20 km walk (road)",
+        "record": "1:16:36.00",
+        "date": "15 Mar 2015"
+    },
+    {
+        "name": "10,000 m walk (track)",
+        "record": "37:53.09",
+        "date": "27 Jul 2008"
+    },
+    {
+        "name": "10 km walk (road)",
+        "record": "37:11.00",
+        "date": "28 May 2000"
+    },
+    {
+        "name": "Decathlon",
+        "record": "9126 pts",
+        "date": "16 Sep 2018"
+    },
+    {
+        "name": "Javelin throw",
+        "record": "98.48 m",
+        "date": "25 May 1996"
+    },
+    {
+        "name": "Hammer throw",
+        "record": "86.74 m",
+        "date": "30 Aug 1986"
+    },
+    {
+        "name": "Discus throw",
+        "record": "74.08 m",
+        "date": "6 Jun 1986"
+    },
+    {
+        "name": "Shot put",
+        "record": "23.12 m",
+        "date": "20 May 1990"
+    },
+    {
+        "name": "Triple jump",
+        "record": "18.29 m",
+        "date": "7 Aug 1995"
+    },
+    {
+        "name": "Long jump",
+        "record": "8.95 m",
+        "date": "30 Aug 1991"
+    },
+    {
+        "name": "Pole vault",
+        "record": "6.16 m",
+        "date": "15 Feb 2014"
+    },
+    {
+        "name": "High jump",
+        "record": "2.45 m",
+        "date": "27 Jul 1993"
+    },
+    {
+        "name": "400 m hurdles",
+        "record": "46.78",
+        "date": "6 Aug 1992"
+    },
+    {
+        "name": "110 m hurdles",
+        "record": "12.80",
+        "date": "7 Sep 2012"
+    },
+    {
+        "name": "3000 m steeplechase",
+        "record": "7:53.63",
+        "date": "3 Sep 2004"
+    },
+    {
+        "name": "3000 m steeplechase",
+        "record": "7:53.17",
+        "date": "16 Aug 2002"
+    },
+    {
+        "name": "20,000 m (track)",
+        "record": "56:25.98",
+        "date": "27 Jun 2007"
+    },
+    {
+        "name": "Marathon[b]",
+        "record": "2:01:39",
+        "date": "16 Sep 2018"
+    },
+    {
+        "name": "Marathon[b]",
+        "record": "2:00:25",
+        "date": "6 May 2017"
+    },
+    {
+        "name": "30,000 m (track)",
+        "record": "1:26:47.40",
+        "date": "3 Jun 2011"
+    },
+    {
+        "name": "25,000 m (track)",
+        "record": "1:12:25.40",
+        "date": "3 Jun 2011"
+    },
+    {
+        "name": "One hour (track)",
+        "record": "21,285 m",
+        "date": "27 Jun 2007"
+    },
+    {
+        "name": "Half marathon",
+        "record": "58:18.00",
+        "date": "28 Oct 2018"
+    },
+    {
+        "name": "10,000 m (track)",
+        "record": "26:17.53",
+        "date": "26 Aug 2005"
+    },
+    {
+        "name": "10 km (road)",
+        "record": "26:44.00",
+        "date": "26 Sep 2010"
+    },
+    {
+        "name": "10 km (road)",
+        "record": "26:41.00",
+        "date": "31 Dec 2018"
+    },
+    {
+        "name": "5000 m (track)",
+        "record": "12:37.35",
+        "date": "31 May 2004"
+    },
+    {
+        "name": "5 km (road)",
+        "record": "13:29.00",
+        "date": "17 Feb 2019"
+    },
+    {
+        "name": "5 km (road)",
+        "record": "13:00.00",
+        "date": "26 Mar 2000"
+    },
+    {
+        "name": "3000 m",
+        "record": "7:20.67",
+        "date": "1 Sep 1996"
+    },
+    {
+        "name": "2000 m",
+        "record": "4:44.79",
+        "date": "7 Sep 1999"
+    },
+    {
+        "name": "Mile",
+        "record": "3:43.13",
+        "date": "7 Jul 1999"
+    },
+    {
+        "name": "1500 m",
+        "record": "3:26.00",
+        "date": "14 Jul 1998"
+    },
+    {
+        "name": "1000 m",
+        "record": "2:11.96",
+        "date": "5 Sep 1999"
+    },
+    {
+        "name": "800 m",
+        "record": "1:40.91",
+        "date": "9 Aug 2012"
+    },
+    {
+        "name": "400 m",
+        "record": "43.03",
+        "date": "14 Aug 2016"
+    },
+    {
+        "name": "200 m",
+        "record": "19.19",
+        "date": "20 Aug 2009"
+    },
+    {
+        "name": "100 m",
+        "record": "9.58",
+        "date": "16 Aug 2009"
+    },
+    {
+        "name": "100 km (road)",
+        "record": "6:09:14",
+        "date": "24 Jun 2018"
+    }
+]

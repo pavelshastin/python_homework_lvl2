@@ -34,6 +34,34 @@ class JIMClient:
 
         return json.dumps(to_send)
 
+    def get_contacts(self):
+        to_send = {
+            "action": "get_contacts",
+            "time": time.time()
+        }
+
+        return json.dumps(to_send)
+
+
+    def add_contact(self, name):
+        to_send = {
+            "action": "add_contact",
+            "user_id": name,
+            "time": time.time()
+        }
+
+        return json.dumps(to_send)
+
+
+    def del_contact(self, name):
+        to_send = {
+            "action": "del_contact",
+            "user_id": name,
+            "time": time.time()
+        }
+
+        return json.dumps(to_send)
+
     def to_chat(self, room, msg):
         if room.upper() in self.__rooms:
 

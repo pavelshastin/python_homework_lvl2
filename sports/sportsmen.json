@@ -1,0 +1,2324 @@
+[
+    {
+        "name": "Tyquendo Tracey",
+        "year": 1995,
+        "country": "Jamaica",
+        "record": "10.03",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Kendal Williams",
+        "year": 1987,
+        "country": "United States",
+        "record": "10.05",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Simon Magakwe",
+        "year": 1995,
+        "country": "South Africa",
+        "record": "10.11",
+        "rank": "master",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Ojie Edoburun",
+        "year": 1991,
+        "country": "Great Britain",
+        "record": "10.22",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Xu Zhouzheng",
+        "year": 1993,
+        "country": "China",
+        "record": "10.32",
+        "rank": "master",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Marvin Rene",
+        "year": 1985,
+        "country": "France",
+        "record": "10.35",
+        "rank": "master",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Lucas Jakubczyk",
+        "year": 1987,
+        "country": "Germany",
+        "record": "10.38",
+        "rank": "master_int",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Remigiusz Olszewski",
+        "year": 1992,
+        "country": "Poland",
+        "record": "10.42",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Xie Zhenye",
+        "year": 1993,
+        "country": "China",
+        "record": "20.25",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Luxolo Adams",
+        "year": 1995,
+        "country": "South Africa",
+        "record": "20.45",
+        "rank": "candidate",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Ameer Webb",
+        "year": 1995,
+        "country": "United States",
+        "record": "20.51",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jahnoy Thompson",
+        "year": 1992,
+        "country": "Jamaica",
+        "record": "20.84",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Micka\u00ebl-M\u00e9ba Zeze",
+        "year": 1989,
+        "country": "France",
+        "record": "20.92",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Delano Williams",
+        "year": 1986,
+        "country": "United Kingdom",
+        "record": "20.97",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Karol Zalewski",
+        "year": 1996,
+        "country": "Poland",
+        "record": "21.14",
+        "rank": "master_int",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Michael Bryan",
+        "year": 1993,
+        "country": "Germany",
+        "record": "21.45",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Paul Dedewo",
+        "year": 1991,
+        "country": "United States",
+        "record": "44.48",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Derick Mokaleng",
+        "year": 1989,
+        "country": "South Africa",
+        "record": "45.48",
+        "rank": "candidate",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Ludvy Vaillant",
+        "year": 1996,
+        "country": "France",
+        "record": "45.64",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Rabah Yousif",
+        "year": 1991,
+        "country": "Great Britain",
+        "record": "45.88",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Rusheen McDonald",
+        "year": 1987,
+        "country": "Jamaica",
+        "record": "45.98",
+        "rank": "master_int",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jakub Krzewina",
+        "year": 1990,
+        "country": "Poland",
+        "record": "46.89",
+        "rank": "master_int",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Marvin Schlegel",
+        "year": 1986,
+        "country": "Germany",
+        "record": "47.35",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Clayton Murphy",
+        "year": 1995,
+        "country": "United States",
+        "record": "1:46.52",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Adam Kszczot",
+        "year": 1985,
+        "country": "Poland",
+        "record": "1:46.98",
+        "rank": "master",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Elliot Giles",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "1:47.40",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Gabriel Tual",
+        "year": 1985,
+        "country": "France",
+        "record": "1:47.44",
+        "rank": "master",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Benedikt Huber",
+        "year": 1992,
+        "country": "Germany",
+        "record": "1:48.52",
+        "rank": "candidate",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Rynardt van Rensburg",
+        "year": 1990,
+        "country": "South Africa",
+        "record": "1:49.14",
+        "rank": "master",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jauvaney James",
+        "year": 1996,
+        "country": "Jamaica",
+        "record": "1:51.44",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Ma Junyi",
+        "year": 1991,
+        "country": "China",
+        "record": "1:53.57",
+        "rank": "candidate",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Marcin Lewandowski",
+        "year": 1995,
+        "country": "Poland",
+        "record": "3:52.88",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Timo Benitz",
+        "year": 1989,
+        "country": "Germany",
+        "record": "3:53.11",
+        "rank": "candidate",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Neil Gourley",
+        "year": 1986,
+        "country": "Great Britain",
+        "record": "3:53.24",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Izaic Yorks",
+        "year": 1986,
+        "country": "United States",
+        "record": "3:53.50",
+        "rank": "candidate",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jerry Motsau",
+        "year": 1996,
+        "country": "South Africa",
+        "record": "3:55.00",
+        "rank": "master",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Simon Denissel",
+        "year": 1989,
+        "country": "France",
+        "record": "3:55.35",
+        "rank": "master",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Wang Shaojie",
+        "year": 1990,
+        "country": "China",
+        "record": "3:58.60",
+        "rank": "master",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Kemoy Campbell",
+        "year": 1988,
+        "country": "Jamaica",
+        "record": "4:01.06",
+        "rank": "candidate",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Pascal Martinot-Lagarde",
+        "year": 1993,
+        "country": "France",
+        "record": "13.22",
+        "rank": "master_int",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Ronald Levy",
+        "year": 1990,
+        "country": "Jamaica",
+        "record": "13.30",
+        "rank": "master",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Devon Allen",
+        "year": 1987,
+        "country": "United States",
+        "record": "13.36",
+        "rank": "master",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Antonio Alkana",
+        "year": 1992,
+        "country": "South Africa",
+        "record": "13.38",
+        "rank": "master_int",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Xie Wenjun",
+        "year": 1988,
+        "country": "China",
+        "record": "13.54",
+        "rank": "master_int",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Damian Czykier",
+        "year": 1994,
+        "country": "Poland",
+        "record": "13.56",
+        "rank": "candidate",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Martin Vogel",
+        "year": 1994,
+        "country": "Germany",
+        "record": "14.08",
+        "rank": "candidate",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Andrew Pozzi",
+        "year": 1990,
+        "country": "Great Britain",
+        "record": "DNF",
+        "rank": "master",
+        "sport": "110 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Kenny Selmon",
+        "year": 1988,
+        "country": "United States",
+        "record": "48.97",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Patryk Dobek",
+        "year": 1990,
+        "country": "Poland",
+        "record": "49.02",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Dai Greene",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "49.48",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Annsert Whyte",
+        "year": 1989,
+        "country": "Jamaica",
+        "record": "49.80",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Victor Coroller",
+        "year": 1989,
+        "country": "France",
+        "record": "49.96",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Joshua Abuaku",
+        "year": 1986,
+        "country": "Germany",
+        "record": "50.78",
+        "rank": "master",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Lindsay Hanekom",
+        "year": 1992,
+        "country": "South Africa",
+        "record": "54.28",
+        "rank": "master",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Jeff Demps",
+        "year": 1992,
+        "country": "United States",
+        "record": "38.42",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Javoy Tucker",
+        "year": 1994,
+        "country": "Jamaica",
+        "record": "38.52",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Antonio Alkana",
+        "year": 1986,
+        "country": "South Africa",
+        "record": "38.53",
+        "rank": "master_int",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Michael Bryan",
+        "year": 1987,
+        "country": "Germany",
+        "record": "38.56",
+        "rank": "master_int",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Micka\u00ebl-M\u00e9ba Zeze",
+        "year": 1995,
+        "country": "France",
+        "record": "38.61",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Xu Haiyang",
+        "year": 1993,
+        "country": "China",
+        "record": "38.87",
+        "rank": "master",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Krzysztof Grze\u015bkowiak",
+        "year": 1992,
+        "country": "Poland",
+        "record": "38.91",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Reuben Arthur",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "38.97",
+        "rank": "master",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Nathan Strother",
+        "year": 1995,
+        "country": "United States",
+        "record": "2:59.78",
+        "rank": "master",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Dariusz Kowaluk",
+        "year": 1992,
+        "country": "Poland",
+        "record": "3:02.80",
+        "rank": "master",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Johannes Trefz",
+        "year": 1985,
+        "country": "Germany",
+        "record": "3:03.16",
+        "rank": "candidate",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Rusheen McDonald",
+        "year": 1987,
+        "country": "Jamaica",
+        "record": "3:04.96",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Mame-Ibra Anne",
+        "year": 1985,
+        "country": "France",
+        "record": "DQ",
+        "rank": "candidate",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Thapelo Phora",
+        "year": 1988,
+        "country": "South Africa",
+        "record": "DQ",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Cameron Chalmers",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "DNS",
+        "rank": "master",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Jeron Robinson",
+        "year": 1991,
+        "country": "United States",
+        "record": "2.30",
+        "rank": "candidate",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Wang Yu",
+        "year": 1995,
+        "country": "China",
+        "record": "2.27",
+        "rank": "master",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Tobias Potye",
+        "year": 1993,
+        "country": "Germany",
+        "record": "2.24",
+        "rank": "master",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Chris Moleya",
+        "year": 1985,
+        "country": "South Africa",
+        "record": "2.21",
+        "rank": "master",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Chris Baker",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "2.21",
+        "rank": "master_int",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Sylwester Bednarek",
+        "year": 1985,
+        "country": "Poland",
+        "record": "2.18",
+        "rank": "master_int",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Quentin Aboukir",
+        "year": 1993,
+        "country": "France",
+        "record": "2.10",
+        "rank": "candidate",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Clayton Brown",
+        "year": 1994,
+        "country": "Jamaica",
+        "record": "DNS",
+        "rank": "candidate",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Sam Kendricks",
+        "year": 1995,
+        "country": "United States",
+        "record": "5.83",
+        "rank": "master",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Raphael Holzdeppe",
+        "year": 1991,
+        "country": "Germany",
+        "record": "5.75",
+        "rank": "master",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Axel Chapelle",
+        "year": 1996,
+        "country": "France",
+        "record": "5.65",
+        "rank": "master",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Charlie Myers",
+        "year": 1986,
+        "country": "Great Britain",
+        "record": "5.50",
+        "rank": "master_int",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Piotr Lisek",
+        "year": 1985,
+        "country": "Poland",
+        "record": "5.50",
+        "rank": "master_int",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Xue Changrui",
+        "year": 1994,
+        "country": "China",
+        "record": "5.35",
+        "rank": "candidate",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Cameron Walker-Shepherd",
+        "year": 1996,
+        "country": "Jamaica",
+        "record": "NM",
+        "rank": "master_int",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Valco van Wyk",
+        "year": 1986,
+        "country": "South Africa",
+        "record": "DNS",
+        "rank": "candidate",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Luvo Manyonga",
+        "year": 1987,
+        "country": "South Africa",
+        "record": "8.51",
+        "rank": "candidate",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Zack Bazile",
+        "year": 1996,
+        "country": "United States",
+        "record": "8.30",
+        "rank": "master_int",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Raomne Bailey",
+        "year": 1990,
+        "country": "Jamaica",
+        "record": "8.13",
+        "rank": "master",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Tomasz Jaszczuk",
+        "year": 1988,
+        "country": "Poland",
+        "record": "8.05",
+        "rank": "master_int",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Huang Changzhou",
+        "year": 1991,
+        "country": "China",
+        "record": "8.01",
+        "rank": "master_int",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Julian Howard",
+        "year": 1985,
+        "country": "Germany",
+        "record": "7.76",
+        "rank": "master",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Yann Randrianasolo",
+        "year": 1993,
+        "country": "France",
+        "record": "7.68",
+        "rank": "candidate",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Dan Bramble",
+        "year": 1996,
+        "country": "Great Britain",
+        "record": "7.64",
+        "rank": "candidate",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Karol Hoffmann",
+        "year": 1988,
+        "country": "Poland",
+        "record": "16.74",
+        "rank": "master_int",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Donald Scott",
+        "year": 1996,
+        "country": "United States",
+        "record": "16.73",
+        "rank": "candidate",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Kevin Luron",
+        "year": 1989,
+        "country": "France",
+        "record": "16.67",
+        "rank": "master",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Godfrey Mokoena",
+        "year": 1990,
+        "country": "South Africa",
+        "record": "16.44",
+        "rank": "master_int",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Jordan Scott",
+        "year": 1994,
+        "country": "Jamaica",
+        "record": "16.31",
+        "rank": "master",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Nathan Douglas",
+        "year": 1996,
+        "country": "Great Britain",
+        "record": "16.24",
+        "rank": "master_int",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Benjamin Bauer",
+        "year": 1991,
+        "country": "Germany",
+        "record": "15.49",
+        "rank": "candidate",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Dong Bin",
+        "year": 1987,
+        "country": "China",
+        "record": "15.40",
+        "rank": "master",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Micha\u0142 Haratyk",
+        "year": 1991,
+        "country": "Poland",
+        "record": "21.95",
+        "rank": "master",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Darrell Hill",
+        "year": 1995,
+        "country": "United States",
+        "record": "21.43",
+        "rank": "master",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "O'Dayne Richards",
+        "year": 1994,
+        "country": "Jamaica",
+        "record": "20.05",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Orazio Cremona",
+        "year": 1988,
+        "country": "South Africa",
+        "record": "19.97",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Fr\u00e9d\u00e9ric Dag\u00e9e",
+        "year": 1990,
+        "country": "France",
+        "record": "19.62",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Simon Bayer",
+        "year": 1992,
+        "country": "Germany",
+        "record": "19.43",
+        "rank": "master_int",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Scott Lincoln",
+        "year": 1990,
+        "country": "Great Britain",
+        "record": "19.24",
+        "rank": "master",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Fedrick Dacres",
+        "year": 1993,
+        "country": "Jamaica",
+        "record": "65.32",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Victor Hogan",
+        "year": 1988,
+        "country": "South Africa",
+        "record": "63.73",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Lolassonn Djouhan",
+        "year": 1990,
+        "country": "France",
+        "record": "63.48",
+        "rank": "candidate",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Daniel Jasinski",
+        "year": 1993,
+        "country": "Germany",
+        "record": "63.17",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Reggie Jager",
+        "year": 1988,
+        "country": "United States",
+        "record": "63.15",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Piotr Ma\u0142achowski",
+        "year": 1995,
+        "country": "Poland",
+        "record": "62.97",
+        "rank": "master_int",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Brett Morse",
+        "year": 1985,
+        "country": "Great Britain",
+        "record": "59.72",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Wojciech Nowicki",
+        "year": 1993,
+        "country": "Poland",
+        "record": "77.94",
+        "rank": "master_int",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Nick Miller",
+        "year": 1987,
+        "country": "Great Britain",
+        "record": "76.14",
+        "rank": "candidate",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Quentin Bigot",
+        "year": 1992,
+        "country": "France",
+        "record": "74.98",
+        "rank": "candidate",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Rudy Winkler",
+        "year": 1991,
+        "country": "United States",
+        "record": "71.72",
+        "rank": "master",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Johannes Bichler",
+        "year": 1992,
+        "country": "Germany",
+        "record": "69.82",
+        "rank": "master_int",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Tshepang Makhethe",
+        "year": 1989,
+        "country": "South Africa",
+        "record": "67.23",
+        "rank": "master_int",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Cannigia Raynor",
+        "year": 1985,
+        "country": "Jamaica",
+        "record": "66.20",
+        "rank": "candidate",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Julian Weber",
+        "year": 1992,
+        "country": "Germany",
+        "record": "82.80",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Marcin Krukowski",
+        "year": 1991,
+        "country": "Poland",
+        "record": "80.25",
+        "rank": "master",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Curtis Thompson",
+        "year": 1987,
+        "country": "United States",
+        "record": "75.47",
+        "rank": "master_int",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Johan Grobler",
+        "year": 1986,
+        "country": "South Africa",
+        "record": "74.26",
+        "rank": "master_int",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "James Whiteaker",
+        "year": 1985,
+        "country": "Great Britain",
+        "record": "73.90",
+        "rank": "master_int",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Orlando Thomas",
+        "year": 1991,
+        "country": "Jamaica",
+        "record": "70.60",
+        "rank": "master_int",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "J\u00e9r\u00e9my Nicollin",
+        "year": 1985,
+        "country": "France",
+        "record": "65.93",
+        "rank": "master_int",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Ashley Henderson",
+        "year": 1992,
+        "country": "United States",
+        "record": "11.07",
+        "rank": "master",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Elaine Thompson",
+        "year": 1992,
+        "country": "Jamaica",
+        "record": "11.09",
+        "rank": "master",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Carina Horn",
+        "year": 1986,
+        "country": "South Africa",
+        "record": "11.21",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Bianca Williams",
+        "year": 1992,
+        "country": "Great Britain",
+        "record": "11.25",
+        "rank": "master_int",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Ewa Swoboda",
+        "year": 1995,
+        "country": "Poland",
+        "record": "11.28",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Orlann Ombissa-Dzangue",
+        "year": 1989,
+        "country": "France",
+        "record": "11.28",
+        "rank": "master_int",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Wei Yongli",
+        "year": 1993,
+        "country": "China",
+        "record": "11.32",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Lisa-Marie Kwayie",
+        "year": 1991,
+        "country": "Germany",
+        "record": "11.46",
+        "rank": "candidate",
+        "sport": "100 metres",
+        "type": "time"
+    },
+    {
+        "name": "Shericka Jackson",
+        "year": 1985,
+        "country": "Jamaica",
+        "record": "22.35",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jenna Prandini",
+        "year": 1995,
+        "country": "United States",
+        "record": "22.45",
+        "rank": "candidate",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Beth Dobbin",
+        "year": 1987,
+        "country": "Great Britain",
+        "record": "22.95",
+        "rank": "candidate",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jessica-Bianca Wessoly",
+        "year": 1989,
+        "country": "Germany",
+        "record": "23.19",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Anna Kie\u0142basi\u0144ska",
+        "year": 1987,
+        "country": "Poland",
+        "record": "23.25",
+        "rank": "master_int",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Justine Palframan",
+        "year": 1985,
+        "country": "South Africa",
+        "record": "23.39",
+        "rank": "master_int",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jennifer Galais",
+        "year": 1987,
+        "country": "France",
+        "record": "23.52",
+        "rank": "master",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Huang Guifen",
+        "year": 1987,
+        "country": "China",
+        "record": "23.76",
+        "rank": "master_int",
+        "sport": "200 metres",
+        "type": "time"
+    },
+    {
+        "name": "Stephenie Ann McPherson",
+        "year": 1995,
+        "country": "Jamaica",
+        "record": "50.98",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Floria Guei",
+        "year": 1990,
+        "country": "France",
+        "record": "51.84",
+        "rank": "master_int",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Justyna \u015awi\u0119ty-Ersetic",
+        "year": 1990,
+        "country": "Poland",
+        "record": "51.89",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Anyika Onuora",
+        "year": 1992,
+        "country": "Great Britain",
+        "record": "52.03",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Courtney Okolo",
+        "year": 1993,
+        "country": "United States",
+        "record": "52.09",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Justine Palframan",
+        "year": 1996,
+        "country": "South Africa",
+        "record": "52.36",
+        "rank": "master",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Lena Naumann",
+        "year": 1989,
+        "country": "Germany",
+        "record": "53.73",
+        "rank": "candidate",
+        "sport": "400 metres",
+        "type": "time"
+    },
+    {
+        "name": "Raevyn Rogers",
+        "year": 1987,
+        "country": "United States",
+        "record": "2:00.20",
+        "rank": "master",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Adelle Tracey",
+        "year": 1985,
+        "country": "Great Britain",
+        "record": "2:01.05",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Simoya Campbell",
+        "year": 1993,
+        "country": "Jamaica",
+        "record": "2:01.59",
+        "rank": "candidate",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Christina Hering",
+        "year": 1986,
+        "country": "Germany",
+        "record": "2:01.86",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Anna Sabat",
+        "year": 1992,
+        "country": "Poland",
+        "record": "2:02.93",
+        "rank": "candidate",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Leila Boufaarirane",
+        "year": 1985,
+        "country": "France",
+        "record": "2:06.06",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Gena L\u00f6fstrand",
+        "year": 1994,
+        "country": "South Africa",
+        "record": "2:10.42",
+        "rank": "master_int",
+        "sport": "800 metres",
+        "type": "time"
+    },
+    {
+        "name": "Sofia Ennaoui",
+        "year": 1991,
+        "country": "Poland",
+        "record": "4:07.66",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Rachel Schneider",
+        "year": 1987,
+        "country": "United States",
+        "record": "4:08.04",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Jemma Reekie",
+        "year": 1990,
+        "country": "Great Britain",
+        "record": "4:09.05",
+        "rank": "candidate",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Caterina Granz",
+        "year": 1986,
+        "country": "Germany",
+        "record": "4:10.04",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Oph\u00e9lie Claude-Boxberger",
+        "year": 1986,
+        "country": "France",
+        "record": "4:18.21",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Carina Viljoen",
+        "year": 1994,
+        "country": "South Africa",
+        "record": "4:29.57",
+        "rank": "master",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Simoya Campbell",
+        "year": 1988,
+        "country": "Jamaica",
+        "record": "DNS",
+        "rank": "master_int",
+        "sport": "1500 metres",
+        "type": "time"
+    },
+    {
+        "name": "Rikenette Steenkamp",
+        "year": 1990,
+        "country": "South Africa",
+        "record": "12.88",
+        "rank": "master_int",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Jeanine Williams",
+        "year": 1992,
+        "country": "Jamaica",
+        "record": "12.95",
+        "rank": "master",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Queen Harrison",
+        "year": 1990,
+        "country": "United States",
+        "record": "12.99",
+        "rank": "master_int",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Solene Ndama",
+        "year": 1987,
+        "country": "France",
+        "record": "13.02",
+        "rank": "master_int",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Karolina Ko\u0142eczek",
+        "year": 1995,
+        "country": "Poland",
+        "record": "13.09",
+        "rank": "master",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Nadine Hilderbrand",
+        "year": 1986,
+        "country": "Germany",
+        "record": "13.25",
+        "rank": "master",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Megan Marrs",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "13.36",
+        "rank": "candidate",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Wui Shuijiao",
+        "year": 1994,
+        "country": "China",
+        "record": "DNS",
+        "rank": "master_int",
+        "sport": "100 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Janieve Russell",
+        "year": 1992,
+        "country": "Jamaica",
+        "record": "55.10",
+        "rank": "master",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Meghan Beesley",
+        "year": 1988,
+        "country": "Great Britain",
+        "record": "55.90",
+        "rank": "master",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Aurelie Chaboudez",
+        "year": 1986,
+        "country": "France",
+        "record": "56.23",
+        "rank": "master",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Wenda Nel",
+        "year": 1988,
+        "country": "South Africa",
+        "record": "56.36",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Kymber Payne",
+        "year": 1987,
+        "country": "United States",
+        "record": "56.41",
+        "rank": "candidate",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Joanna Linkiewicz",
+        "year": 1990,
+        "country": "Poland",
+        "record": "56.83",
+        "rank": "master_int",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Djamila B\u00f6hm",
+        "year": 1992,
+        "country": "Germany",
+        "record": "57.88",
+        "rank": "candidate",
+        "sport": "400 metres hurdles",
+        "type": "time"
+    },
+    {
+        "name": "Asha Philip",
+        "year": 1992,
+        "country": "Great Britain",
+        "record": "42.52",
+        "rank": "master_int",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Shelly-Ann Fraser-Pryce",
+        "year": 1996,
+        "country": "Jamaica",
+        "record": "42.60",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Liang Xiaojing",
+        "year": 1991,
+        "country": "China",
+        "record": "42.94",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Lisa Marie Kwayie",
+        "year": 1987,
+        "country": "Germany",
+        "record": "43.04",
+        "rank": "candidate",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Estelle Raffai",
+        "year": 1986,
+        "country": "France",
+        "record": "43.34",
+        "rank": "master",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Rikenette Steenkamp",
+        "year": 1988,
+        "country": "South Africa",
+        "record": "43.68",
+        "rank": "master",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Kamila Ciba",
+        "year": 1993,
+        "country": "Poland",
+        "record": "43.82",
+        "rank": "master",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Mikiah Briscoe",
+        "year": 1995,
+        "country": "United States",
+        "record": "DNF",
+        "rank": "master_int",
+        "sport": "4 \u00d7 100 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Brionna Thomas",
+        "year": 1989,
+        "country": "United States",
+        "record": "3:24.28",
+        "rank": "candidate",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Christine Day",
+        "year": 1986,
+        "country": "Jamaica",
+        "record": "3:24.29",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Elea-Mariama Diarra",
+        "year": 1992,
+        "country": "France",
+        "record": "3:25.91",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Ma\u0142gorzata Ho\u0142ub-Kowalik",
+        "year": 1990,
+        "country": "Poland",
+        "record": "3:26.17",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Zoey Clark",
+        "year": 1991,
+        "country": "Great Britain",
+        "record": "3:26.48",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Laura Marx",
+        "year": 1994,
+        "country": "Germany",
+        "record": "3:35.15",
+        "rank": "master_int",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Justine Palframan",
+        "year": 1990,
+        "country": "South Africa",
+        "record": "3:43.35",
+        "rank": "master",
+        "sport": "4 \u00d7 400 metres relay",
+        "type": "time"
+    },
+    {
+        "name": "Vashti Cunningham",
+        "year": 1991,
+        "country": "United States",
+        "record": "1.96",
+        "rank": "master_int",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Morgan Lake",
+        "year": 1994,
+        "country": "Great Britain",
+        "record": "1.93",
+        "rank": "candidate",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Prisca Duvernay",
+        "year": 1986,
+        "country": "France",
+        "record": "1.83",
+        "rank": "candidate",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Jossie Graumann",
+        "year": 1989,
+        "country": "Germany",
+        "record": "1.83",
+        "rank": "master",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Paulina Borys",
+        "year": 1992,
+        "country": "Poland",
+        "record": "1.79",
+        "rank": "master_int",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Saniel Atkinson-Grier",
+        "year": 1993,
+        "country": "Jamaica",
+        "record": "1.75",
+        "rank": "master",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Julia du Plessis",
+        "year": 1991,
+        "country": "South Africa",
+        "record": "1.75",
+        "rank": "master",
+        "sport": "High jump",
+        "type": "meter"
+    },
+    {
+        "name": "Holly Bradshaw",
+        "year": 1992,
+        "country": "Great Britain",
+        "record": "4.75",
+        "rank": "candidate",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Katie Nageotte",
+        "year": 1988,
+        "country": "United States",
+        "record": "4.68",
+        "rank": "master_int",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Ninon Guillon-Romarin",
+        "year": 1994,
+        "country": "France",
+        "record": "4.68",
+        "rank": "master_int",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Jacqueline Otchere",
+        "year": 1993,
+        "country": "Germany",
+        "record": "4.60",
+        "rank": "master",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Li Ling",
+        "year": 1996,
+        "country": "China",
+        "record": "4.60",
+        "rank": "candidate",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Justyna \u015amietanka",
+        "year": 1991,
+        "country": "Poland",
+        "record": "4.40",
+        "rank": "master_int",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Sophie Cook",
+        "year": 1991,
+        "country": "Great Britain",
+        "record": "4.05",
+        "rank": "master",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Christy Nell",
+        "year": 1994,
+        "country": "South Africa",
+        "record": "NM",
+        "rank": "candidate",
+        "sport": "Pole vault",
+        "type": "meter"
+    },
+    {
+        "name": "Lorraine Ugen",
+        "year": 1996,
+        "country": "Great Britain",
+        "record": "6.86",
+        "rank": "master",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Quanesha Burks",
+        "year": 1992,
+        "country": "United States",
+        "record": "6.48",
+        "rank": "master_int",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Tissanna Hickling",
+        "year": 1994,
+        "country": "Jamaica",
+        "record": "6.47",
+        "rank": "candidate",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Lu Minjia",
+        "year": 1991,
+        "country": "China",
+        "record": "6.45",
+        "rank": "master",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Rougui Sow",
+        "year": 1992,
+        "country": "France",
+        "record": "6.35",
+        "rank": "master_int",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Alexandra Wester",
+        "year": 1996,
+        "country": "Germany",
+        "record": "6.30",
+        "rank": "master",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Magdalena \u017bebrowska",
+        "year": 1994,
+        "country": "Poland",
+        "record": "6.12",
+        "rank": "master",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Lynique Beneke",
+        "year": 1987,
+        "country": "South Africa",
+        "record": "6.10",
+        "rank": "candidate",
+        "sport": "Long jump",
+        "type": "meter"
+    },
+    {
+        "name": "Shanieka Ricketts",
+        "year": 1996,
+        "country": "Jamaica",
+        "record": "14.61",
+        "rank": "master_int",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Keturah Orji",
+        "year": 1985,
+        "country": "United States",
+        "record": "14.60",
+        "rank": "candidate",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Anna Jagaciak-Michalska",
+        "year": 1991,
+        "country": "Poland",
+        "record": "14.08",
+        "rank": "candidate",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Jeanine Assani Issouf",
+        "year": 1987,
+        "country": "France",
+        "record": "13.98",
+        "rank": "candidate",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Jessie Maduka",
+        "year": 1996,
+        "country": "Germany",
+        "record": "13.95",
+        "rank": "master",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Naomi Ogbeta",
+        "year": 1991,
+        "country": "Great Britain",
+        "record": "13.48",
+        "rank": "master",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Patience Ntshingila",
+        "year": 1990,
+        "country": "South Africa",
+        "record": "11.56",
+        "rank": "master_int",
+        "sport": "Triple jump",
+        "type": "meter"
+    },
+    {
+        "name": "Gong Lijiao",
+        "year": 1987,
+        "country": "China",
+        "record": "19.90",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Paulina Guba",
+        "year": 1986,
+        "country": "Poland",
+        "record": "19.29",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Maggie Ewen",
+        "year": 1987,
+        "country": "United States",
+        "record": "18.23",
+        "rank": "master",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Ischke Senekal",
+        "year": 1987,
+        "country": "South Africa",
+        "record": "17.54",
+        "rank": "master",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Amelia Strickler",
+        "year": 1986,
+        "country": "Great Britain",
+        "record": "17.12",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Lloydrickia Cameron",
+        "year": 1986,
+        "country": "Jamaica",
+        "record": "16.91",
+        "rank": "master_int",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Sarah Schmidt",
+        "year": 1986,
+        "country": "Germany",
+        "record": "16.85",
+        "rank": "master",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Jessica Cerival",
+        "year": 1995,
+        "country": "France",
+        "record": "16.00",
+        "rank": "candidate",
+        "sport": "Shot put",
+        "type": "meter"
+    },
+    {
+        "name": "Claudine Vita",
+        "year": 1994,
+        "country": "Germany",
+        "record": "62.92",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Su Xinyue",
+        "year": 1994,
+        "country": "China",
+        "record": "62.62",
+        "rank": "master_int",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Valarie Allman",
+        "year": 1995,
+        "country": "United States",
+        "record": "61.10",
+        "rank": "master_int",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Jade Lally",
+        "year": 1991,
+        "country": "Great Britain",
+        "record": "58.92",
+        "rank": "candidate",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Daria Zabawska",
+        "year": 1985,
+        "country": "Poland",
+        "record": "56.97",
+        "rank": "master",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Melanie Pingeon",
+        "year": 1988,
+        "country": "France",
+        "record": "55.85",
+        "rank": "master_int",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Ischke Senekal",
+        "year": 1987,
+        "country": "South Africa",
+        "record": "55.54",
+        "rank": "master_int",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Shadae Lawrence",
+        "year": 1990,
+        "country": "Jamaica",
+        "record": "NM",
+        "rank": "candidate",
+        "sport": "Discus throw",
+        "type": "meter"
+    },
+    {
+        "name": "Anita W\u0142odarczyk",
+        "year": 1994,
+        "country": "Poland",
+        "record": "78.74",
+        "rank": "master",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Sophie Hitchon",
+        "year": 1993,
+        "country": "Great Britain",
+        "record": "73.48",
+        "rank": "master",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Alexandra Tavernier",
+        "year": 1990,
+        "country": "France",
+        "record": "73.38",
+        "rank": "candidate",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Lou Na",
+        "year": 1994,
+        "country": "China",
+        "record": "68.27",
+        "rank": "master_int",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Kathrin Klaas",
+        "year": 1990,
+        "country": "Germany",
+        "record": "66.61",
+        "rank": "master_int",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Deanna Price",
+        "year": 1985,
+        "country": "United States",
+        "record": "64.82",
+        "rank": "master",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Margo Chene Pretorius",
+        "year": 1985,
+        "country": "South Africa",
+        "record": "59.14",
+        "rank": "master",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Nyoka Clunis",
+        "year": 1990,
+        "country": "Jamaica",
+        "record": "56.36",
+        "rank": "candidate",
+        "sport": "Hammer throw",
+        "type": "meter"
+    },
+    {
+        "name": "Sunette Viljoen",
+        "year": 1987,
+        "country": "South Africa",
+        "record": "61.69",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Kara Winger",
+        "year": 1993,
+        "country": "United States",
+        "record": "60.75",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Lyu Huihui",
+        "year": 1991,
+        "country": "China",
+        "record": "60.40",
+        "rank": "master_int",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Katharina Molitor",
+        "year": 1994,
+        "country": "Germany",
+        "record": "58.03",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Alexie Alais",
+        "year": 1996,
+        "country": "France",
+        "record": "53.36",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Laura Whittingham",
+        "year": 1996,
+        "country": "Great Britain",
+        "record": "51.74",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Marcelina Witek",
+        "year": 1991,
+        "country": "Poland",
+        "record": "50.07",
+        "rank": "master",
+        "sport": "Javelin throw",
+        "type": "meter"
+    },
+    {
+        "name": "Kateema Riettie",
+        "year": 1991,
+        "country": "Jamaica",
+        "record": "47.21",
+        "rank": "candidate",
+        "sport": "Javelin throw",
+        "type": "meter"
+    }
+]
