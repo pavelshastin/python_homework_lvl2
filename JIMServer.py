@@ -118,3 +118,19 @@ class JIMServer:
             "alert": "The server error"
         }
         return json.dumps(to_send)
+
+    def contact(self, user_id):
+        to_send = {
+            "action": "contact_list",
+            "user_id": user_id
+        }
+
+        return json.dumps(to_send)
+
+    def cont_quantity(self, quant):
+        to_send = {
+            "response": 202,
+            "quantity": quant
+        }
+
+        return json.dumps(to_send)
