@@ -37,6 +37,7 @@ class JIMClient:
     def get_contacts(self):
         to_send = {
             "action": "get_contacts",
+            "from": self.__name,
             "time": time.time()
         }
 
@@ -47,6 +48,7 @@ class JIMClient:
         to_send = {
             "action": "add_contact",
             "user_id": name,
+            "from": self.__name,
             "time": time.time()
         }
 
@@ -57,6 +59,7 @@ class JIMClient:
         to_send = {
             "action": "del_contact",
             "user_id": name,
+            "from": self.__name,
             "time": time.time()
         }
 

@@ -68,7 +68,7 @@ class Server(JIMServer, metaclass=MetaServer):
 
             if len(requests) != 0:
                 try:
-                   msg = self.OK(list(requests.values()))
+                   msg = requests[sock]
 
                    sock.send(msg.encode("ascii"))
 
@@ -125,16 +125,23 @@ if __name__ == "__main__":
         pass
 
     #Creating chat and adding 6 users with given name
-    new_chat = Chat("new")
-    new_chat.add_user("Pavel")
-    new_chat.add_user("Sveta")
-    new_chat.add_user("Alex")
-    new_chat.add_user("Girl")
-    new_chat.add_user("Pavel_2")
-    new_chat.add_user("Me")
+    # new_chat = Chat("new")
+    # new_chat.add_user("Pavel")
+    # new_chat.add_user("Sveta")
+    # new_chat.add_user("Alex")
+    # new_chat.add_user("Girl")
+    # new_chat.add_user("Pavel_2")
+    # new_chat.add_user("Me")
 
     req_handler = MessageHandler()
-    req_handler.add_chat(new_chat)
+    # req_handler.add_chat(new_chat)
+
+    req_handler.add_user("Pavel", "Password")
+    req_handler.add_user("Sveta", "Password")
+    req_handler.add_user("Alex", "Password")
+    req_handler.add_user("Girl", "Password")
+    req_handler.add_user("Pavel_2", "Password")
+    req_handler.add_user("Me", "Password")
 
     server = Server((addr, port), req_handler)
 

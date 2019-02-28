@@ -1,11 +1,13 @@
 import json
 
 from Chat import Chat
+from ServerStorage import ServerStorage
+from JIMServer import JIMServer
 
-
-class MessageHandler:
+class MessageHandler(JIMServer):
     def __init__(self):
         self.chats = []
+        self.storage = ServerStorage()
 
     def add_chat(self, chat):
         if isinstance(chat, Chat):
@@ -20,17 +22,33 @@ class MessageHandler:
     def handle_request(self, msg):
         if self.__verify_req(msg):
 
-            if msg["action"]:
-                for ch in self.chats:
+            if msg["action"] == "add_contact":
+                add = self.storage.add_contact(msg["user_id"], msg["from"])
+                if add:
+                    return self.accept("Accepted")
+                else:
+                    return self.not_authed()
 
-                    if ch.name == msg["to"]:
+            elif msg["action"] == "get_contacts":
 
-                        ch.add_message(msg["message"], msg["from"])
+                conts = self.storage.get_contacts(msg["from"])
+                return self.contact(conts)
 
-                        return ch.get_messages(msg["from"])
+            for ch in self.chats:
+
+                if ch.name == msg["to"]:
+
+                    ch.add_message(msg["message"], msg["from"])
+
+                    return self.OK(ch.get_messages(msg["from"]))
+
 
         else:
             return msg
+
+
+    def add_user(self, name, info):
+        self.storage.add_user(name, info)
 
 
     def __verify_req(self, msg):
