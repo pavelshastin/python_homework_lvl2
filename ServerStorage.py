@@ -49,7 +49,7 @@ class Contacts(Base):
 class ServerStorage:
 
     def __init__(self):
-        eng = create_engine("sqlite:///server.sqlite")
+        eng = create_engine("sqlite:///server.sqlite", connect_args={'check_same_thread': False})
 
         Session = sessionmaker()
         Session.configure(bind=eng)
