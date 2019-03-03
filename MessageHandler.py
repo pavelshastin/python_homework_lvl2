@@ -24,14 +24,16 @@ class MessageHandler(JIMServer):
 
             if msg["action"] == "add_contact":
                 add = self.storage.add_contact(msg["user_id"], msg["from"])
+                print("Add: ", add)
                 if add:
                     return self.accept("Accepted")
                 else:
                     return self.not_authed()
 
             elif msg["action"] == "get_contacts":
-
+                print(msg["from"])
                 conts = self.storage.get_contacts(msg["from"])
+                print(self.contact(conts))
                 return self.contact(conts)
 
             for ch in self.chats:

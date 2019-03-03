@@ -32,6 +32,7 @@ class Client(JIMClient, metaclass=MetaClient):
         self.sock.send(self.get_contacts().encode("ascii"))
 
         contacts = self.sock.recv(1024).decode("ascii")
+        print(contacts)
         return json.loads(contacts)
         # n = 0
         # q = -1

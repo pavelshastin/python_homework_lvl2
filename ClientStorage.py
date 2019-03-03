@@ -10,7 +10,7 @@ class ContactList(Base):
     __tablename__ = "contact_list"
 
     id = Column(Integer, primary_key=True)
-    user_id = Column(String)
+    user_id = Column(String, unique=True)
 
     def __init__(self, user_id):
         self.user_id = user_id
@@ -57,4 +57,5 @@ class ClientStorage:
         self.session.commit()
 
     def get_contacts(self):
+
         return self.session.query(ContactList).all()

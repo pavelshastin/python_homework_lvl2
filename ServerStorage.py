@@ -2,6 +2,7 @@ from sqlalchemy import create_engine, func, update
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, DateTime, String, ForeignKey
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.schema import ForeignKeyConstraint
 import json
 
 Base = declarative_base()
@@ -10,18 +11,19 @@ Base = declarative_base()
 class Clients(Base):
     __tablename__ = "clients"
 
-    id = Column(Integer, primary_key=True)
-    user_id = Column(String)
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(String, unique=True)
     info = Column(String)
 
     def __init__(self, user_id, info):
         self.user_id = user_id
         self.info = info
 
+
 class History(Base):
     __tablename__ = "history"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     time = Column(DateTime, default=func.now())
     _from = Column(String)
     _from_ip = Column(String)
@@ -39,8 +41,9 @@ class History(Base):
 class Contacts(Base):
     __tablename__ = "contacts"
 
-    user_id = Column(Integer, primary_key=True)
-    contacts = Column(String)
+    id = Column(Integer, primary_key=True)
+    user_id = Column(String, ForeignKey("clients.user_id"))
+    contacts = Column(String, ForeignKey("clients.user_id"))
 
 
 class ServerStorage:
@@ -58,9 +61,13 @@ class ServerStorage:
         pass
 
     def add_user(self, user_id, info):
+        if self.session.query(Clients).filter(Clients.user_id == user_id).one():
+            return False
+
         user = Clients(user_id, info)
         self.session.add(user)
         self.session.commit()
+
 
 
 
@@ -72,31 +79,30 @@ class ServerStorage:
 
 
     def get_contacts(self, user_id):
-        try:
-            user = self.session.query(Clients).filter(Clients.user_id == user_id).one()
-            conts_str = self.session.query(Contacts).filter(Contacts.user_id == user.id)
+        # try:
+        q = self.session.query(Contacts).filter(Contacts.user_id == user_id).all()
 
-            conts_list = conts_str.split(",")
+        if len(q) == 0:
 
-            return self.session.query(Clients).filter(Clients.id in conts_list).all()
+            rows = self.session.query(Clients).all()
+            print("rows", [row.user_id for row in rows])
+            return [row.user_id for row in rows]
 
-        except:
-            pass
+        return [row.user_id for row in q]
+
+        # except:
+        #     pass
+
+
+
 
 
     def add_contact(self, user_id, contact):
-        print("add_contact", user_id, contact)
-        print(self.session.query(Clients).all())
-        user = self.session.query(Clients).filter(Clients.user_id == user_id).one()
-        print("user", user)
-        cont = self.session.query(Clients).filter(Clients.user_id == contact).one()
-
-        print("Add_contact", user, cont)
-        conts = self.session.query(Contacts).filter(Contacts.user_id == user.id).one()
-        conts = conts + cont.id + ","
-
-        print("conts", conts)
-        self.session.query(Contacts).filter(Contacts.user_id == user.id).update({'contacts': conts})
+        print("Add_contact", user_id, contact)
+        contact = Contacts(user_id, contact)
+        self.session.add(contact)
         self.session.commit()
+
+        print("Query", self.session.query(Contacts).all())
 
         return True

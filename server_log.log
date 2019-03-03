@@ -17578,3 +17578,488 @@
 2019-02-28 15:27:47,646 INFO       log_config logged Start read_requests. Caller run
 2019-02-28 15:27:47,649 ERROR      server read_requests Multiple rows were found for one()
 2019-02-28 15:27:47,649 INFO       log_config logged read_requests result {}
+2019-03-02 16:55:33,026 INFO       server __init__ Creating an instance of Server
+2019-03-02 16:55:33,035 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 16:55:50,635 INFO       server run Connection with ('127.0.0.1', 37242)
+2019-03-02 16:55:50,696 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 16:55:50,702 INFO       log_config logged read_requests result {<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37242)>: '{"user_id": null, "action": "contact_list"}'}
+2019-03-02 16:55:50,704 INFO       log_config logged Start write_response. Caller run
+2019-03-02 16:55:50,705 INFO       log_config logged write_response result None
+2019-03-02 16:55:55,524 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 16:55:55,525 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-02 16:55:55,526 INFO       log_config logged read_requests result {}
+2019-03-02 17:03:39,279 INFO       server run Connection with ('127.0.0.1', 37464)
+2019-03-02 17:03:39,484 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:03:39,494 INFO       log_config logged read_requests result {<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37464)>: '{"user_id": null, "action": "contact_list"}'}
+2019-03-02 17:03:39,495 INFO       log_config logged Start write_response. Caller run
+2019-03-02 17:03:39,495 ERROR      server write_response <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37242)>
+2019-03-02 17:03:39,496 INFO       log_config logged write_response result None
+2019-03-02 17:09:40,936 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:09:40,937 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:09:56,414 INFO       server run Connection with ('127.0.0.1', 37522)
+2019-03-02 17:09:56,664 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:09:56,667 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37522)>: '{"action": "contact_list", "user_id": null}'}
+2019-03-02 17:09:56,668 INFO       log_config logged Start write_response. Caller run
+2019-03-02 17:09:56,669 INFO       log_config logged write_response result None
+2019-03-02 17:10:01,686 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:10:01,687 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-02 17:10:01,688 INFO       log_config logged read_requests result {}
+2019-03-02 17:11:28,719 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:11:56,879 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:12:07,927 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:18:02,271 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:18:02,271 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:18:08,883 INFO       server run Connection with ('127.0.0.1', 37682)
+2019-03-02 17:18:08,924 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:18:08,927 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37682)>: '{"action": "contact_list", "user_id": null}'}
+2019-03-02 17:18:08,928 INFO       log_config logged Start write_response. Caller run
+2019-03-02 17:18:08,928 INFO       log_config logged write_response result None
+2019-03-02 17:18:13,346 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:18:13,348 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-02 17:18:13,349 INFO       log_config logged read_requests result {}
+2019-03-02 17:21:39,952 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:25:26,463 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:25:26,463 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:25:31,347 INFO       server run Connection with ('127.0.0.1', 37720)
+2019-03-02 17:25:31,391 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:25:31,393 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37720)>: '{"user_id": null, "action": "contact_list"}'}
+2019-03-02 17:25:31,395 INFO       log_config logged Start write_response. Caller run
+2019-03-02 17:25:31,395 INFO       log_config logged write_response result None
+2019-03-02 17:25:42,033 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:25:42,036 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-02 17:25:42,038 INFO       log_config logged read_requests result {}
+2019-03-02 17:26:27,889 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:26:38,148 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:29:54,741 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:29:54,742 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:29:59,437 INFO       server run Connection with ('127.0.0.1', 37736)
+2019-03-02 17:29:59,684 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:29:59,687 ERROR      server read_requests 'str' object has no attribute 'conts'
+2019-03-02 17:29:59,687 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:18,551 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:18,552 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:18,755 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:18,756 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:18,961 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:18,963 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:19,167 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:19,169 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:19,374 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:19,376 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:19,582 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:19,584 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:19,786 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:19,787 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:19,989 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:19,990 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:20,192 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:20,192 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:20,394 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:20,394 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:20,596 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:20,597 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:20,799 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:20,799 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:21,001 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:21,001 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:21,203 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:21,203 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:21,407 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:21,408 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:21,612 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:21,613 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:21,818 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:21,819 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:22,024 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:22,026 INFO       log_config logged read_requests result {}
+2019-03-02 17:30:22,230 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:30:22,232 INFO       log_config logged read_requests result {}
+2019-03-02 17:33:12,817 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:33:12,818 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:33:17,832 INFO       server run Connection with ('127.0.0.1', 37756)
+2019-03-02 17:33:17,878 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:33:17,880 ERROR      server read_requests 'str' object has no attribute 'conts'
+2019-03-02 17:33:17,881 INFO       log_config logged read_requests result {}
+2019-03-02 17:34:17,114 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:35:45,373 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:35:45,374 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:35:50,961 INFO       server run Connection with ('127.0.0.1', 37782)
+2019-03-02 17:35:51,006 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:35:51,010 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37782)>: '{"action": "contact_list", "user_id": null}'}
+2019-03-02 17:35:51,011 INFO       log_config logged Start write_response. Caller run
+2019-03-02 17:35:51,012 INFO       log_config logged write_response result None
+2019-03-02 17:38:22,996 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:38:22,997 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:38:30,510 INFO       server run Connection with ('127.0.0.1', 37792)
+2019-03-02 17:38:30,556 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:38:30,559 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 37792)>: '{"user_id": null, "action": "contact_list"}'}
+2019-03-02 17:38:30,561 INFO       log_config logged Start write_response. Caller run
+2019-03-02 17:38:30,561 INFO       log_config logged write_response result None
+2019-03-02 17:43:46,585 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:43:46,586 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:43:51,005 INFO       server run Connection with ('127.0.0.1', 37862)
+2019-03-02 17:43:51,054 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:43:51,057 ERROR      server read_requests This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: clients.user_id [SQL: 'INSERT INTO clients (user_id, info) VALUES (?, ?)'] [parameters: ('Pavel', 'Password')] (Background on this error at: http://sqlalche.me/e/gkpj)
+2019-03-02 17:43:51,058 INFO       log_config logged read_requests result {}
+2019-03-02 17:47:14,037 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:51:44,050 INFO       server __init__ Creating an instance of Server
+2019-03-02 17:51:44,051 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 17:51:50,210 INFO       server run Connection with ('127.0.0.1', 37926)
+2019-03-02 17:51:50,254 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 17:51:50,257 ERROR      server read_requests This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: clients.user_id [SQL: 'INSERT INTO clients (user_id, info) VALUES (?, ?)'] [parameters: ('Pavel', 'Password')] (Background on this error at: http://sqlalche.me/e/gkpj)
+2019-03-02 17:51:50,258 INFO       log_config logged read_requests result {}
+2019-03-02 18:02:28,943 INFO       server __init__ Creating an instance of Server
+2019-03-02 18:07:11,862 INFO       server __init__ Creating an instance of Server
+2019-03-02 18:07:11,862 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 18:07:18,893 INFO       server run Connection with ('127.0.0.1', 38496)
+2019-03-02 18:07:18,939 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 18:07:18,942 ERROR      server read_requests This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: clients.user_id [SQL: 'INSERT INTO clients (user_id, info) VALUES (?, ?)'] [parameters: ('Pavel', 'Password')] (Background on this error at: http://sqlalche.me/e/gkpj)
+2019-03-02 18:07:18,943 INFO       log_config logged read_requests result {}
+2019-03-02 18:10:35,494 INFO       server __init__ Creating an instance of Server
+2019-03-02 18:12:13,142 INFO       server __init__ Creating an instance of Server
+2019-03-02 18:12:13,142 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 18:12:20,022 INFO       server run Connection with ('127.0.0.1', 38596)
+2019-03-02 18:12:20,075 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 18:12:20,078 ERROR      server read_requests This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: clients.user_id [SQL: 'INSERT INTO clients (user_id, info) VALUES (?, ?)'] [parameters: ('Pavel', 'Password')] (Background on this error at: http://sqlalche.me/e/gkpj)
+2019-03-02 18:12:20,079 INFO       log_config logged read_requests result {}
+2019-03-02 19:31:21,095 INFO       server __init__ Creating an instance of Server
+2019-03-02 19:31:21,112 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 19:31:25,584 INFO       server run Connection with ('127.0.0.1', 39574)
+2019-03-02 19:31:25,624 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 19:31:25,629 INFO       log_config logged read_requests result {<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 39574)>: '{"user_id": [], "action": "contact_list"}'}
+2019-03-02 19:31:25,630 INFO       log_config logged Start write_response. Caller run
+2019-03-02 19:31:25,631 INFO       log_config logged write_response result None
+2019-03-02 19:31:47,118 INFO       server __init__ Creating an instance of Server
+2019-03-02 19:32:02,523 INFO       server __init__ Creating an instance of Server
+2019-03-02 19:32:02,525 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 19:32:12,268 INFO       server run Connection with ('127.0.0.1', 39580)
+2019-03-02 19:32:12,308 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 19:32:12,315 INFO       log_config logged read_requests result {<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 39580)>: '{"user_id": [], "action": "contact_list"}'}
+2019-03-02 19:32:12,316 INFO       log_config logged Start write_response. Caller run
+2019-03-02 19:32:12,316 INFO       log_config logged write_response result None
+2019-03-02 19:35:45,135 INFO       server __init__ Creating an instance of Server
+2019-03-02 19:35:45,136 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 19:35:49,583 INFO       server run Connection with ('127.0.0.1', 39610)
+2019-03-02 19:35:49,627 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 19:35:49,635 ERROR      server read_requests <ServerStorage.Clients object at 0x7ff2b4ca5048> is not JSON serializable
+2019-03-02 19:35:49,636 INFO       log_config logged read_requests result {}
+2019-03-02 19:56:58,546 INFO       server __init__ Creating an instance of Server
+2019-03-02 19:56:58,547 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 19:57:02,619 INFO       server run Connection with ('127.0.0.1', 40666)
+2019-03-02 19:57:02,867 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 19:57:02,875 INFO       log_config logged read_requests result {<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 40666)>: '{"user_id": [], "action": "contact_list"}'}
+2019-03-02 19:57:02,876 INFO       log_config logged Start write_response. Caller run
+2019-03-02 19:57:02,882 INFO       log_config logged write_response result None
+2019-03-02 20:40:56,634 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 20:40:56,636 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-02 20:40:56,637 INFO       log_config logged read_requests result {}
+2019-03-02 20:41:10,349 INFO       server __init__ Creating an instance of Server
+2019-03-02 20:45:06,590 INFO       server __init__ Creating an instance of Server
+2019-03-02 20:45:06,590 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 20:45:10,987 INFO       server run Connection with ('127.0.0.1', 42744)
+2019-03-02 20:45:11,027 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 20:45:11,037 INFO       log_config logged read_requests result {<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 42744)>: '{"user_id": [], "action": "contact_list"}'}
+2019-03-02 20:45:11,038 INFO       log_config logged Start write_response. Caller run
+2019-03-02 20:45:11,038 INFO       log_config logged write_response result None
+2019-03-02 20:46:01,386 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 20:46:01,387 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-02 20:46:01,388 INFO       log_config logged read_requests result {}
+2019-03-02 20:46:43,269 INFO       server __init__ Creating an instance of Server
+2019-03-02 20:46:47,513 INFO       server __init__ Creating an instance of Server
+2019-03-02 20:49:48,628 INFO       server __init__ Creating an instance of Server
+2019-03-02 20:49:48,630 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 20:49:53,146 INFO       server run Connection with ('127.0.0.1', 42816)
+2019-03-02 20:49:53,194 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 20:49:53,206 ERROR      server read_requests not enough arguments for format string
+2019-03-02 20:49:53,206 INFO       log_config logged read_requests result {}
+2019-03-02 21:00:55,203 INFO       server __init__ Creating an instance of Server
+2019-03-02 21:00:55,204 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 21:01:17,801 INFO       server __init__ Creating an instance of Server
+2019-03-02 21:01:51,733 INFO       server __init__ Creating an instance of Server
+2019-03-02 21:01:51,734 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-02 21:02:06,318 INFO       server run Connection with ('127.0.0.1', 42920)
+2019-03-02 21:02:06,563 INFO       log_config logged Start read_requests. Caller run
+2019-03-02 21:02:06,574 ERROR      server read_requests not enough arguments for format string
+2019-03-02 21:02:06,574 INFO       log_config logged read_requests result {}
+2019-03-03 08:24:55,704 INFO       server __init__ Creating an instance of Server
+2019-03-03 08:24:55,730 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 08:25:00,407 INFO       server run Connection with ('127.0.0.1', 46074)
+2019-03-03 08:25:00,475 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:25:00,482 ERROR      server read_requests not enough arguments for format string
+2019-03-03 08:25:00,483 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:38,617 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:38,619 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:38,823 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:38,824 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:39,028 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:39,030 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:39,234 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:39,235 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:39,437 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:39,438 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:39,639 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:39,640 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:39,841 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:39,841 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:40,043 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:40,043 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:40,245 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:40,246 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:40,448 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:40,448 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:40,650 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:40,650 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:40,854 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:40,855 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:44,066 INFO       server __init__ Creating an instance of Server
+2019-03-03 08:26:44,067 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 08:26:48,502 INFO       server run Connection with ('127.0.0.1', 46076)
+2019-03-03 08:26:48,554 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:48,562 ERROR      server read_requests not enough arguments for format string
+2019-03-03 08:26:48,566 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:57,394 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:57,397 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:57,602 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:57,604 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:57,808 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:57,813 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:58,017 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:58,019 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:58,223 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:58,225 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:58,428 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:58,429 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:58,633 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:58,633 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:58,837 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:58,839 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:59,044 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:59,047 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:59,251 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:59,253 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:59,457 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:59,458 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:59,663 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:59,664 INFO       log_config logged read_requests result {}
+2019-03-03 08:26:59,866 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:26:59,867 INFO       log_config logged read_requests result {}
+2019-03-03 08:27:00,068 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:27:00,068 INFO       log_config logged read_requests result {}
+2019-03-03 08:27:00,270 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:27:00,270 INFO       log_config logged read_requests result {}
+2019-03-03 08:27:00,472 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:27:00,472 INFO       log_config logged read_requests result {}
+2019-03-03 08:27:00,673 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:27:00,674 INFO       log_config logged read_requests result {}
+2019-03-03 08:27:00,876 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:27:00,877 INFO       log_config logged read_requests result {}
+2019-03-03 08:27:42,803 INFO       server __init__ Creating an instance of Server
+2019-03-03 08:27:42,804 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 08:27:54,383 INFO       server run Connection with ('127.0.0.1', 46082)
+2019-03-03 08:27:54,423 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:27:54,431 ERROR      server read_requests not enough arguments for format string
+2019-03-03 08:27:54,432 INFO       log_config logged read_requests result {}
+2019-03-03 08:28:27,583 INFO       server __init__ Creating an instance of Server
+2019-03-03 08:29:49,066 INFO       server __init__ Creating an instance of Server
+2019-03-03 08:29:49,067 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 08:29:52,287 INFO       server run Connection with ('127.0.0.1', 46094)
+2019-03-03 08:29:52,535 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:29:52,546 ERROR      server read_requests not enough arguments for format string
+2019-03-03 08:29:52,547 INFO       log_config logged read_requests result {}
+2019-03-03 08:32:04,314 INFO       server __init__ Creating an instance of Server
+2019-03-03 08:32:04,316 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 08:32:38,987 INFO       server run Connection with ('127.0.0.1', 46160)
+2019-03-03 08:32:39,031 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 08:32:39,041 ERROR      server read_requests <ServerStorage.Clients object at 0x7f94a5fa3588> is not JSON serializable
+2019-03-03 08:32:39,041 INFO       log_config logged read_requests result {}
+2019-03-03 08:33:06,844 INFO       server __init__ Creating an instance of Server
+2019-03-03 09:43:29,340 INFO       server __init__ Creating an instance of Server
+2019-03-03 09:43:29,340 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 09:43:35,828 INFO       server run Connection with ('127.0.0.1', 47268)
+2019-03-03 09:43:35,875 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:43:35,883 ERROR      server read_requests <ServerStorage.Clients object at 0x7f0b85ee30f0> is not JSON serializable
+2019-03-03 09:43:35,884 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:29,853 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:29,854 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:30,058 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:30,059 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:30,262 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:30,263 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:30,467 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:30,468 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:30,670 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:30,671 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:30,873 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:30,874 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:31,077 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:31,079 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:31,281 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:31,282 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:31,486 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:31,487 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:31,691 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:31,693 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:31,895 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:31,895 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:32,097 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:32,097 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:32,299 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:32,299 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:32,500 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:32,501 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:32,703 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:32,703 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:32,905 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:32,905 INFO       log_config logged read_requests result {}
+2019-03-03 09:44:35,997 INFO       server __init__ Creating an instance of Server
+2019-03-03 09:44:35,997 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 09:44:39,992 INFO       server run Connection with ('127.0.0.1', 47270)
+2019-03-03 09:44:40,038 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 09:44:40,048 ERROR      server read_requests <ServerStorage.Clients object at 0x7fa859f6d2b0> is not JSON serializable
+2019-03-03 09:44:40,049 INFO       log_config logged read_requests result {}
+2019-03-03 09:45:41,532 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:16:19,415 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:16:19,416 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:16:23,470 INFO       server run Connection with ('127.0.0.1', 48382)
+2019-03-03 10:16:23,717 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:16:23,729 ERROR      server read_requests <ServerStorage.Clients object at 0x7f79a875d438> is not JSON serializable
+2019-03-03 10:16:23,729 INFO       log_config logged read_requests result {}
+2019-03-03 10:19:02,106 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:25:27,635 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:25:27,638 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:25:31,143 INFO       server run Connection with ('127.0.0.1', 48608)
+2019-03-03 10:25:31,394 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:25:31,404 ERROR      server read_requests <ServerStorage.Clients object at 0x7f36a53de6a0> is not JSON serializable
+2019-03-03 10:25:31,405 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:37,247 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:37,249 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:37,451 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:37,451 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:37,654 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:37,655 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:37,859 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:37,860 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:38,062 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:38,063 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:38,266 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:38,267 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:38,470 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:38,471 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:38,675 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:38,676 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:38,880 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:38,881 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:39,085 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:39,086 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:39,290 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:39,291 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:39,495 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:39,496 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:39,699 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:39,700 INFO       log_config logged read_requests result {}
+2019-03-03 10:30:39,904 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:30:39,905 INFO       log_config logged read_requests result {}
+2019-03-03 10:31:13,578 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:31:13,579 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:31:33,267 INFO       server run Connection with ('127.0.0.1', 48624)
+2019-03-03 10:31:33,313 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:31:33,321 INFO       log_config logged read_requests result {<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 48624)>: '{"action": "contact_list", "user_id": ["Pavel", "Sveta", "Alex", "Girl", "Pavel_2", "Me"]}'}
+2019-03-03 10:31:33,322 INFO       log_config logged Start write_response. Caller run
+2019-03-03 10:31:33,323 INFO       log_config logged write_response result None
+2019-03-03 10:31:58,309 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:31:58,310 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:32:03,799 INFO       server run Connection with ('127.0.0.1', 48626)
+2019-03-03 10:32:03,846 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:32:03,849 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 48626)>: '{"action": "contact_list", "user_id": null}'}
+2019-03-03 10:32:03,850 INFO       log_config logged Start write_response. Caller run
+2019-03-03 10:32:03,851 INFO       log_config logged write_response result None
+2019-03-03 10:32:38,318 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:32:38,318 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:32:42,584 INFO       server run Connection with ('127.0.0.1', 48632)
+2019-03-03 10:32:42,623 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:32:42,625 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 48632)>: '{"user_id": null, "action": "contact_list"}'}
+2019-03-03 10:32:42,627 INFO       log_config logged Start write_response. Caller run
+2019-03-03 10:32:42,627 INFO       log_config logged write_response result None
+2019-03-03 10:33:33,776 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:33:33,777 ERROR      server read_requests __init__() takes 1 positional argument but 3 were given
+2019-03-03 10:33:33,778 INFO       log_config logged read_requests result {}
+2019-03-03 10:33:54,686 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:35:19,784 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:35:19,785 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:35:23,970 INFO       server run Connection with ('127.0.0.1', 48640)
+2019-03-03 10:35:24,012 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:35:24,016 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 48640)>: '{"action": "contact_list", "user_id": null}'}
+2019-03-03 10:35:24,017 INFO       log_config logged Start write_response. Caller run
+2019-03-03 10:35:24,017 INFO       log_config logged write_response result None
+2019-03-03 10:39:53,035 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:41:39,261 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:41:39,263 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:41:43,177 INFO       server run Connection with ('127.0.0.1', 48676)
+2019-03-03 10:41:43,221 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:41:43,224 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 48676)>: '{"action": "contact_list", "user_id": null}'}
+2019-03-03 10:41:43,226 INFO       log_config logged Start write_response. Caller run
+2019-03-03 10:41:43,227 INFO       log_config logged write_response result None
+2019-03-03 10:44:15,756 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:49:54,553 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:49:54,554 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:49:58,518 INFO       server run Connection with ('127.0.0.1', 48892)
+2019-03-03 10:49:58,560 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:49:58,562 ERROR      server read_requests This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: clients.user_id [SQL: 'INSERT INTO clients (user_id, info) VALUES (?, ?)'] [parameters: ('Pavel', 'Password')] (Background on this error at: http://sqlalche.me/e/gkpj)
+2019-03-03 10:49:58,562 INFO       log_config logged read_requests result {}
+2019-03-03 10:52:52,922 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:53:51,667 INFO       server __init__ Creating an instance of Server
+2019-03-03 10:53:51,668 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 10:53:55,453 INFO       server run Connection with ('127.0.0.1', 49316)
+2019-03-03 10:53:55,496 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 10:53:55,499 ERROR      server read_requests This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: clients.user_id [SQL: 'INSERT INTO clients (user_id, info) VALUES (?, ?)'] [parameters: ('Pavel', 'Password')] (Background on this error at: http://sqlalche.me/e/gkpj)
+2019-03-03 10:53:55,500 INFO       log_config logged read_requests result {}
+2019-03-03 11:01:31,651 INFO       server __init__ Creating an instance of Server
+2019-03-03 11:01:31,652 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 11:01:35,900 INFO       server run Connection with ('127.0.0.1', 49464)
+2019-03-03 11:01:35,944 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 11:01:35,950 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 49464)>: '{"action": "contact_list", "user_id": ["Pavel", "Sveta", "Alex", "Girl", "Pavel_2", "Me"]}'}
+2019-03-03 11:01:35,951 INFO       log_config logged Start write_response. Caller run
+2019-03-03 11:01:35,952 INFO       log_config logged write_response result None
+2019-03-03 11:01:52,728 INFO       server __init__ Creating an instance of Server
+2019-03-03 11:01:52,729 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 11:01:56,587 INFO       server run Connection with ('127.0.0.1', 49468)
+2019-03-03 11:01:56,627 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 11:01:56,633 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 49468)>: '{"user_id": ["Pavel", "Sveta", "Alex", "Girl", "Pavel_2", "Me"], "action": "contact_list"}'}
+2019-03-03 11:01:56,635 INFO       log_config logged Start write_response. Caller run
+2019-03-03 11:01:56,635 INFO       log_config logged write_response result None
+2019-03-03 17:27:45,590 INFO       server __init__ Creating an instance of Server
+2019-03-03 17:29:38,777 INFO       server __init__ Creating an instance of Server
+2019-03-03 17:29:38,777 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 17:29:43,151 INFO       server run Connection with ('127.0.0.1', 53706)
+2019-03-03 17:29:43,408 INFO       log_config logged Start read_requests. Caller run
+2019-03-03 17:29:43,415 INFO       log_config logged read_requests result {<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53706)>: '{"user_id": ["Pavel", "Sveta", "Alex", "Girl", "Pavel_2", "Me"], "action": "contact_list"}'}
+2019-03-03 17:29:43,420 INFO       log_config logged Start write_response. Caller run
+2019-03-03 17:29:43,422 INFO       log_config logged write_response result None
+2019-03-03 18:00:39,155 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:00:50,727 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:00:50,728 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:01:17,995 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:01:17,995 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:04:10,195 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:04:10,195 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:05:04,700 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:05:04,701 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:06:29,679 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:06:29,680 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:06:44,371 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:06:54,348 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:06:54,349 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:07:11,923 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:07:11,923 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:29:56,404 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:29:56,433 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 18:30:58,515 INFO       server __init__ Creating an instance of Server
+2019-03-03 18:30:58,516 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 19:11:38,093 INFO       server __init__ Creating an instance of Server
+2019-03-03 19:11:38,125 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 19:16:26,607 INFO       server __init__ Creating an instance of Server
+2019-03-03 19:16:26,608 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 19:19:22,640 INFO       server __init__ Creating an instance of Server
+2019-03-03 19:19:22,641 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-03 19:53:50,395 INFO       server __init__ Creating an instance of Server
+2019-03-03 19:53:50,408 INFO       server new_listen_socket Server is listening on  port 7777
