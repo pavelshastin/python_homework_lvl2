@@ -47608,3 +47608,146 @@
 2019-03-06 14:20:18,155 INFO       server __init__ Creating an instance of Server
 2019-03-06 14:20:18,156 INFO       server new_listen_socket Server is listening on  port 7777
 2019-03-06 14:20:32,357 INFO       server run Connection with ('127.0.0.1', 55110)
+2019-03-06 19:20:27,382 INFO       server __init__ Creating an instance of Server
+2019-03-06 19:20:27,382 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-06 19:21:17,960 INFO       server run Connection with ('127.0.0.1', 60900)
+2019-03-06 20:18:09,394 INFO       server run Connection with ('127.0.0.1', 34556)
+2019-03-06 20:18:09,485 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:18:09,486 INFO       log_config logged read_requests result {}
+2019-03-06 20:19:48,904 INFO       server run Connection with ('127.0.0.1', 34568)
+2019-03-06 20:19:48,905 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:19:48,906 INFO       log_config logged read_requests result {}
+2019-03-06 20:23:25,246 INFO       server run Connection with ('127.0.0.1', 34622)
+2019-03-06 20:23:25,247 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:23:25,248 INFO       log_config logged read_requests result {}
+2019-03-06 20:24:19,531 INFO       server run Connection with ('127.0.0.1', 34624)
+2019-03-06 20:24:19,533 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:24:19,534 INFO       log_config logged read_requests result {}
+2019-03-06 20:24:32,778 INFO       server run Connection with ('127.0.0.1', 34626)
+2019-03-06 20:24:32,779 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:24:32,780 INFO       log_config logged read_requests result {}
+2019-03-06 20:26:31,910 INFO       server run Connection with ('127.0.0.1', 34628)
+2019-03-06 20:26:31,912 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:26:31,914 INFO       log_config logged read_requests result {}
+2019-03-06 20:28:08,093 INFO       server run Connection with ('127.0.0.1', 34664)
+2019-03-06 20:28:08,095 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:28:08,097 ERROR      server read_requests Extra data: line 1 column 93 (char 92)
+2019-03-06 20:28:08,097 INFO       log_config logged read_requests result {}
+2019-03-06 20:28:53,350 INFO       server run Connection with ('127.0.0.1', 34680)
+2019-03-06 20:28:53,351 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:28:53,352 INFO       log_config logged read_requests result {}
+2019-03-06 20:30:36,298 INFO       server run Connection with ('127.0.0.1', 34682)
+2019-03-06 20:30:36,300 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:30:36,301 INFO       log_config logged read_requests result {}
+2019-03-06 20:34:04,201 INFO       server run Connection with ('127.0.0.1', 34722)
+2019-03-06 20:34:04,202 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:34:04,203 INFO       log_config logged read_requests result {}
+2019-03-06 20:35:35,657 INFO       server __init__ Creating an instance of Server
+2019-03-06 20:35:35,657 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-06 20:35:57,234 INFO       server run Connection with ('127.0.0.1', 34736)
+2019-03-06 20:37:37,079 INFO       server run Connection with ('127.0.0.1', 34742)
+2019-03-06 20:37:37,121 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:37:37,122 ERROR      server read_requests Extra data: line 1 column 94 (char 93)
+2019-03-06 20:37:37,123 INFO       log_config logged read_requests result {}
+2019-03-06 20:38:46,939 INFO       server run Connection with ('127.0.0.1', 34764)
+2019-03-06 20:38:46,940 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:38:46,940 INFO       log_config logged read_requests result {}
+2019-03-06 20:39:15,532 INFO       server run Connection with ('127.0.0.1', 34766)
+2019-03-06 20:39:15,533 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:39:15,534 INFO       log_config logged read_requests result {}
+2019-03-06 20:41:01,644 INFO       server run Connection with ('127.0.0.1', 34768)
+2019-03-06 20:41:01,645 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:41:01,646 INFO       log_config logged read_requests result {}
+2019-03-06 20:57:34,297 INFO       server run Connection with ('127.0.0.1', 35126)
+2019-03-06 20:57:34,315 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 20:57:34,316 INFO       log_config logged read_requests result {}
+2019-03-06 21:00:05,330 INFO       server run Connection with ('127.0.0.1', 35142)
+2019-03-06 21:00:05,331 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:00:05,333 INFO       log_config logged read_requests result {}
+2019-03-06 21:00:29,235 INFO       server run Connection with ('127.0.0.1', 35144)
+2019-03-06 21:00:29,237 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:00:29,238 INFO       log_config logged read_requests result {}
+2019-03-06 21:01:37,269 INFO       server run Connection with ('127.0.0.1', 35166)
+2019-03-06 21:01:37,271 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:01:37,272 INFO       log_config logged read_requests result {}
+2019-03-06 21:02:28,873 INFO       server run Connection with ('127.0.0.1', 35168)
+2019-03-06 21:02:28,874 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:02:28,876 INFO       log_config logged read_requests result {}
+2019-03-06 21:02:44,540 INFO       server run Connection with ('127.0.0.1', 35170)
+2019-03-06 21:02:44,542 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:02:44,544 INFO       log_config logged read_requests result {}
+2019-03-06 21:03:00,877 INFO       server run Connection with ('127.0.0.1', 35176)
+2019-03-06 21:03:00,879 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:03:00,885 INFO       log_config logged read_requests result {}
+2019-03-06 21:05:35,639 INFO       server run Connection with ('127.0.0.1', 35192)
+2019-03-06 21:05:35,641 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:05:35,644 ERROR      server read_requests Extra data: line 1 column 99 (char 98)
+2019-03-06 21:05:35,644 INFO       log_config logged read_requests result {}
+2019-03-06 21:06:06,803 INFO       server run Connection with ('127.0.0.1', 35194)
+2019-03-06 21:06:06,804 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:06:06,805 INFO       log_config logged read_requests result {<socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35192)>: <generator object MessageHandler.handle_request at 0x7ff6ceadb6d0>}
+2019-03-06 21:06:06,806 INFO       log_config logged Start write_response. Caller run
+2019-03-06 21:06:06,807 ERROR      server write_response <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34736)>
+2019-03-06 21:06:06,807 ERROR      server write_response <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34742)>
+2019-03-06 21:06:06,807 ERROR      server write_response <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34764)>
+2019-03-06 21:06:06,808 ERROR      server write_response <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34766)>
+2019-03-06 21:06:06,808 ERROR      server write_response <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34768)>
+2019-03-06 21:06:06,809 ERROR      server write_response <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35126)>
+2019-03-06 21:06:06,809 ERROR      server write_response <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35142)>
+2019-03-06 21:06:06,810 ERROR      server write_response <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35144)>
+2019-03-06 21:06:06,810 ERROR      server write_response <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35166)>
+2019-03-06 21:06:06,811 ERROR      server write_response <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35168)>
+2019-03-06 21:06:06,811 ERROR      server write_response <socket.socket fd=16, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35170)>
+2019-03-06 21:06:06,812 ERROR      server write_response <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35176)>
+2019-03-06 21:06:06,813 ERROR      server write_response <socket.socket fd=19, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35194)>
+2019-03-06 21:06:06,813 INFO       log_config logged write_response result None
+2019-03-06 21:06:42,533 INFO       server run Connection with ('127.0.0.1', 35216)
+2019-03-06 21:06:42,534 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:06:42,536 INFO       log_config logged read_requests result {<socket.socket fd=19, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35194)>: <generator object MessageHandler.handle_request at 0x7ff6ceadb780>}
+2019-03-06 21:06:42,537 INFO       log_config logged Start write_response. Caller run
+2019-03-06 21:06:42,537 ERROR      server write_response <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34736)>
+2019-03-06 21:06:42,537 ERROR      server write_response <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34742)>
+2019-03-06 21:06:42,538 ERROR      server write_response <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34764)>
+2019-03-06 21:06:42,538 ERROR      server write_response <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34766)>
+2019-03-06 21:06:42,538 ERROR      server write_response <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34768)>
+2019-03-06 21:06:42,539 ERROR      server write_response <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35126)>
+2019-03-06 21:06:42,539 ERROR      server write_response <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35142)>
+2019-03-06 21:06:42,539 ERROR      server write_response <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35144)>
+2019-03-06 21:06:42,540 ERROR      server write_response <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35166)>
+2019-03-06 21:06:42,540 ERROR      server write_response <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35168)>
+2019-03-06 21:06:42,540 ERROR      server write_response <socket.socket fd=16, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35170)>
+2019-03-06 21:06:42,540 ERROR      server write_response <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35176)>
+2019-03-06 21:06:42,541 ERROR      server write_response <socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35192)>
+2019-03-06 21:06:42,541 ERROR      server write_response <socket.socket fd=20, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35216)>
+2019-03-06 21:06:42,542 INFO       log_config logged write_response result None
+2019-03-06 21:13:45,255 INFO       server run Connection with ('127.0.0.1', 35408)
+2019-03-06 21:13:45,257 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:13:45,260 INFO       log_config logged read_requests result {<socket.socket fd=20, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35216)>: <generator object MessageHandler.handle_request at 0x7ff6ceadb728>}
+2019-03-06 21:13:45,262 INFO       log_config logged Start write_response. Caller run
+2019-03-06 21:13:45,263 ERROR      server write_response <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34736)>
+2019-03-06 21:13:45,263 ERROR      server write_response <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34742)>
+2019-03-06 21:13:45,264 ERROR      server write_response <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34764)>
+2019-03-06 21:13:45,264 ERROR      server write_response <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34766)>
+2019-03-06 21:13:45,264 ERROR      server write_response <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 34768)>
+2019-03-06 21:13:45,265 ERROR      server write_response <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35126)>
+2019-03-06 21:13:45,265 ERROR      server write_response <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35142)>
+2019-03-06 21:13:45,265 ERROR      server write_response <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35144)>
+2019-03-06 21:13:45,266 ERROR      server write_response <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35166)>
+2019-03-06 21:13:45,266 ERROR      server write_response <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35168)>
+2019-03-06 21:13:45,266 ERROR      server write_response <socket.socket fd=16, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35170)>
+2019-03-06 21:13:45,267 ERROR      server write_response <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35176)>
+2019-03-06 21:13:45,267 ERROR      server write_response <socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35192)>
+2019-03-06 21:13:45,267 ERROR      server write_response <socket.socket fd=19, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35194)>
+2019-03-06 21:13:45,268 ERROR      server write_response <socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 35408)>
+2019-03-06 21:13:45,268 INFO       log_config logged write_response result None
+2019-03-06 21:17:26,009 INFO       server __init__ Creating an instance of Server
+2019-03-06 21:17:26,009 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-06 21:17:29,494 INFO       server run Connection with ('127.0.0.1', 35436)
+2019-03-06 21:20:19,763 INFO       server run Connection with ('127.0.0.1', 35462)
+2019-03-06 21:20:19,808 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:20:19,809 ERROR      server read_requests Extra data: line 1 column 99 (char 98)
+2019-03-06 21:20:19,809 INFO       log_config logged read_requests result {}
+2019-03-06 21:21:27,505 INFO       server run Connection with ('127.0.0.1', 35468)
+2019-03-06 21:21:27,506 INFO       log_config logged Start read_requests. Caller run
+2019-03-06 21:21:27,507 ERROR      server read_requests Extra data: line 1 column 99 (char 98)
+2019-03-06 21:21:27,507 INFO       log_config logged read_requests result {}

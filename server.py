@@ -64,6 +64,7 @@ class Server(JIMServer, metaclass=MetaServer):
 
     @log(logger)
     def write_response(self, requests, writables):
+        print(__name__, "--------------")
 
         for sock in writables:
 

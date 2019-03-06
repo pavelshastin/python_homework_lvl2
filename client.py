@@ -7,6 +7,7 @@ import json
 import datetime as time
 import sys
 from threading import Thread, Lock
+from select import select
 
 from JIMClient import JIMClient
 from MetaClient import MetaClient
@@ -31,14 +32,12 @@ class Client(JIMClient, metaclass=MetaClient):
 
         self.sock = s
 
-        t_read = Thread(target=self.to_read)
-        t_write = Thread(target=self.to_write)
+        # t_read = Thread(target=self.to_read)
+        # t_read.start()
+        # t_read.join()
+        #
+        self.to_write()
 
-        t_write.start()
-        t_read.start()
-
-        t_read.join()
-        t_write.join()
 
 
     # def get_conts(self):
@@ -68,21 +67,21 @@ class Client(JIMClient, metaclass=MetaClient):
 
     def to_read(self):
         while True:
-            with self.lock:
-                msg = self.sock.recv(1024).decode("ascii")
+            self.lock.acquire()
+            msg = self.sock.recv(1024).decode("ascii")
 
-                print(__name__, msg)
-                if msg:
-                    form = json.loads(msg)
+            print(__name__, msg)
+            if msg:
+                form = json.loads(msg)
 
-                    if form["response"] == 200:
-                        for m in form["alert"][0]:
-                            dt = time.datetime.fromtimestamp(form["time"])
-                            fr = m[0]
-                            ms = m[1]
-                            self.storage.add_message(dt, fr, ms)
-                            print("{} From: {} Message: {}".format(time.datetime.ctime(dt), fr, ms))
-
+                if form["response"] == 200:
+                    for m in form["alert"][0]:
+                        dt = time.datetime.fromtimestamp(form["time"])
+                        fr = m[0]
+                        ms = m[1]
+                        self.storage.add_message(dt, fr, ms)
+                        print("{} From: {} Message: {}".format(time.datetime.ctime(dt), fr, ms))
+            self.lock.release()
 
     def to_write(self):
         # contacts = self.storage.get_contacts()
@@ -127,27 +126,44 @@ class Client(JIMClient, metaclass=MetaClient):
 
 
         while True:
+            # self.lock.release()
+            # send_to = input("To: ")
+            # msg = input("Message: ")
+            #
+            #
+            # if msg == "quit" or send_to == "quit":
+            #     self.sock.close()
+            #     break
+            #
+            # try:
+            #     # self.lock.acquire()
+            #     self.sock.send(self.to_user(send_to, msg).encode("ascii"))
+            #     # self.lock.release()
+            #     self.lock.acquire()
+            # except:
+            #     print("The message haven't send")
 
-            send_to = input("To: ")
-            msg = input("Message: ")
+            sockets_list = [sys.stdin, self.sock]
 
+            read_sockets, write_socket, errsocket = select(sockets_list, [], [])
 
-            if msg == "quit" or send_to == "quit":
-                self.sock.close()
-                break
+            for sock in read_sockets:
+                if sock == self.sock:
+                    print("one")
 
-            try:
-                with self.lock:
-                    self.sock.send(self.to_user(send_to, msg).encode("ascii"))
-                    data = self.sock.recv(1024).decode("ascii")
+                    message = self.sock.recv(1024).encode("ascii")
+                    
+                    sys.stdout.write(message)
+                    sys.stdout.flush()
+                else:
+                    message = sys.stdin.readline()
+                    mes = self.to_user("Pavel", message).encode("ascii")
 
-                    print(data)
+                    self.sock.send(mes)
 
-            except:
-                print("The message haven't send")
+                    sys.stdout.write("Pavel")
 
-
-
+                    sys.stdout.flush()
 
 
 if __name__ == "__main__":
@@ -174,6 +190,7 @@ if __name__ == "__main__":
     user.join("new")
 
     user.connect(address)
+
     # user.get_conts()
 
 
