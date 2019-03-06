@@ -30,19 +30,30 @@ class MessageHandler(JIMServer):
                 else:
                     return self.not_authed()
 
+
             elif msg["action"] == "get_contacts":
-                print(msg["from"])
+
                 conts = self.storage.get_contacts(msg["from"])
-                print(self.contact(conts))
-                return self.contact(conts)
+                cont_nums = len(conts)
 
-            for ch in self.chats:
+                yield self.cont_quantity(cont_nums)
 
-                if ch.name == msg["to"]:
+                for cont in conts:
+                    yield self.contact(cont)
 
-                    ch.add_message(msg["message"], msg["from"])
 
-                    return self.OK(ch.get_messages(msg["from"]))
+            elif msg["action"] == "msg":
+                print(__name__, msg["message"])
+                print(__name__, self.OK(msg["message"]))
+                return self.OK(msg["message"])
+
+            # for ch in self.chats:
+            #
+            #     if ch.name == msg["to"]:
+            #
+            #         ch.add_message(msg["message"], msg["from"])
+            #
+            #         return self.OK(ch.get_messages(msg["from"]))
 
 
         else:

@@ -48,14 +48,19 @@ class ClientStorage:
         self.session.commit()
 
     def add_contact(self, user_id):
-        self.session.add(ContactList(user_id))
-        self.session.commit()
+        try:
+            self.session.query(ContactList).filter(ContactList.user_id == user_id).one()
+            return False
+        except:
+            self.session.add(ContactList(user_id))
+            self.session.commit()
+
 
     def del_contact(self, user_id):
         user = self.session.query(ContactList).filter(ContactList.iser_id == user_id).one()
         self.session.delete(user)
         self.session.commit()
 
-    def get_contacts(self):
 
+    def get_contacts(self):
         return self.session.query(ContactList).all()

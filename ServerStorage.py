@@ -79,22 +79,18 @@ class ServerStorage:
 
 
     def get_contacts(self, user_id):
-        # try:
-        q = self.session.query(Contacts).filter(Contacts.user_id == user_id).all()
+        try:
+            q = self.session.query(Contacts).filter(Contacts.user_id == user_id).all()
 
-        if len(q) == 0:
+            if len(q) == 0:
 
-            rows = self.session.query(Clients).all()
-            print("rows", [row.user_id for row in rows])
-            return [row.user_id for row in rows]
+                rows = self.session.query(Clients).all()
 
-        return [row.user_id for row in q]
+                return [row.user_id for row in rows]
 
-        # except:
-        #     pass
-
-
-
+            return [row.user_id for row in q]
+        except:
+            pass
 
 
     def add_contact(self, user_id, contact):
