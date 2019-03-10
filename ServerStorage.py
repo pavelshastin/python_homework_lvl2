@@ -1,7 +1,7 @@
-from sqlalchemy import create_engine, func, update
+from sqlalchemy import create_engine, func, update, not_, and_
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, DateTime, String, ForeignKey
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import Column, Integer, DateTime, String, ForeignKeyConstraint
+from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.schema import ForeignKeyConstraint
 import json
 
@@ -13,11 +13,12 @@ class Clients(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(String, unique=True)
-    info = Column(String)
+    password = Column(String)
+    cont_rel = relationship("Contacts")
 
-    def __init__(self, user_id, info):
+    def __init__(self, user_id, pswd):
         self.user_id = user_id
-        self.info = info
+        self.password = pswd
 
 
 class History(Base):
@@ -42,8 +43,17 @@ class Contacts(Base):
     __tablename__ = "contacts"
 
     id = Column(Integer, primary_key=True)
-    user_id = Column(String, ForeignKey("clients.user_id"))
-    contacts = Column(String, ForeignKey("clients.user_id"))
+    user_id = Column(String)
+    contact = Column(String)
+
+    __table_args__ = (
+        ForeignKeyConstraint([user_id, contact], ['clients.user_id', 'clients.user_id']),
+
+    )
+
+    def __init__(self, user_id, contact):
+        self.user_id = user_id
+        self.contact = contact
 
 
 class ServerStorage:
@@ -60,15 +70,41 @@ class ServerStorage:
     def get_user(self, user_id):
         pass
 
+
     def add_user(self, user_id, info):
-        if self.session.query(Clients).filter(Clients.user_id == user_id).one():
+        try:
+            q = self.session.query(Clients).filter(Clients.user_id == user_id).one()
+
+            return False
+        except:
+            user = Clients(user_id, info)
+            self.session.add(user)
+            self.session.commit()
+
+            return True
+
+
+    def authenticate(self, user_id, pswd):
+        try:
+
+            q = self.session.query(Clients).filter(Clients.user_id == user_id).one()
+
+            if q.password != pswd:
+                return False
+
+            return True
+        except:
+
             return False
 
-        user = Clients(user_id, info)
-        self.session.add(user)
-        self.session.commit()
 
+    def get_users_all(self):
+        try:
+            q = self.session.query(Clients).all()
 
+            return [row.user_id for row in q]
+        except:
+            return False
 
 
     def get_messages(self, user_id):
@@ -80,25 +116,45 @@ class ServerStorage:
 
     def get_contacts(self, user_id):
         try:
-            q = self.session.query(Contacts).filter(Contacts.user_id == user_id).all()
-
-            if len(q) == 0:
-
-                rows = self.session.query(Clients).all()
-
-                return [row.user_id for row in rows]
-
+            q = self.session.query(Contacts).all()
             return [row.user_id for row in q]
         except:
-            pass
+
+            return False
+
+
+    def get_potencials(self, user_id):
+        # try:
+        contacts = self.session.query(Contacts).all()
+        contacts = [r.user_id for r in contacts]
+        contacts.append(user_id)
+
+        potencials = self.session.query(Clients).filter(not_(Clients.user_id.in_(contacts))).all()
+
+        return [row.user_id for row in potencials]
+        # except:
+        #     return False
+
 
 
     def add_contact(self, user_id, contact):
         print("Add_contact", user_id, contact)
+
         contact = Contacts(user_id, contact)
         self.session.add(contact)
         self.session.commit()
 
-        print("Query", self.session.query(Contacts).all())
-
         return True
+
+
+    def del_contact(self, user_id, contact):
+
+        try:
+            contact = self.session.query(Contacts).filter(and_(Contacts.user_id == user_id,
+                                                               Contacts.contact == contact)).one()
+            self.session.delete(contact)
+            self.session.commit()
+            return True
+
+        except:
+            return False

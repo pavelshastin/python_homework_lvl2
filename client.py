@@ -4,10 +4,10 @@
 
 from socket import socket, AF_INET, SOCK_STREAM
 import json
-import datetime as time
+import datetime as dt
+import time
 import sys
-from threading import Thread, Lock
-from select import select
+from threading import Thread, Event, Lock
 
 from JIMClient import JIMClient
 from MetaClient import MetaClient
@@ -20,73 +20,148 @@ class Client(JIMClient, metaclass=MetaClient):
 
         self.__name = name
         self.__password = password
-        self.storage = ClientStorage(name)
+        self.__msg = ""
+        self.__send_to = ""
+        self.__from = ""
+        self.__from_msg = ""
+        self.__potencials = []
+        self.__quant = -1
+
+        self.__authed = Event()
+        self.__got_conts = Event()
+        self.__got_potents = Event()
+        self.__contacts = Event()
+        self.__add_cont = Event()
+        self.__del_cont = Event()
         self.lock = Lock()
+
+        self.storage = ClientStorage(name)
+
 
 
 
 
     def connect(self, address):
-        s = socket(AF_INET, SOCK_STREAM)
-        s.connect(address)
+        self.sock = socket(AF_INET, SOCK_STREAM)
+        self.sock.connect(address)
 
-        self.sock = s
+        self.th_read = Thread(target=self.read_thread)
+        self.th_read.daemon = True
+        self.th_read.start()
 
-        # t_read = Thread(target=self.to_read)
-        # t_read.start()
-        # t_read.join()
-        #
-        self.to_write()
+        try:
+            self.sock.send(self.auth().encode("ascii"))
+            self.__authed.wait()
+
+            self.sock.send(self.get_potencials().encode("ascii"))
+            self.__got_potents.wait()
+
+            self.sock.send(self.get_contacts().encode("ascii"))
+            self.__got_conts.wait()
+        except:
+            print("Can't send message")
 
 
+        self.th_cont = Thread(target=self.contact_thread)
+        self.th_cont.daemon = True
+        self.th_cont.start()
+        self.th_cont.join()
 
-    # def get_conts(self):
-    #     self.acquire()
-    #     self.sock.send(self.get_contacts().encode("ascii"))
-    #     print("contacts getting")
-    #     cont_num = json.loads(self.sock.recv(1024).decode("ascii"))
-    #     self.release()
-    #
-    #     q = int(cont_num["quantity"])
-    #     print("q", q)
-    #     n = 1
-    #     while True:
-    #         contact = self.sock.recv(1024).decode("ascii")
-    #
-    #         contact = json.loads(contact)
-    #         print("contact", contact)
-    #         if contact["action"] == "contact_list":
-    #             self.storage.add_contact(contact["user_id"])
-    #
-    #         if n == q:
-    #             break
-    #
-    #         n += 1
+
+        self.th_write = Thread(target=self.write_thread)
+        self.th_write.daemon = True
+        self.th_write.start()
+
+        self.th_inpt = Thread(target=self.input_thread)
+        self.th_inpt.daemon = True
+        self.th_inpt.start()
 
 
 
-    def to_read(self):
+
+    def read_thread(self):
+
         while True:
-            self.lock.acquire()
+
             msg = self.sock.recv(1024).decode("ascii")
 
-            print(__name__, msg)
-            if msg:
-                form = json.loads(msg)
 
-                if form["response"] == 200:
-                    for m in form["alert"][0]:
-                        dt = time.datetime.fromtimestamp(form["time"])
-                        fr = m[0]
-                        ms = m[1]
-                        self.storage.add_message(dt, fr, ms)
-                        print("{} From: {} Message: {}".format(time.datetime.ctime(dt), fr, ms))
-            self.lock.release()
+            msg = json.loads(msg)
+            try:
+                response = msg["response"]
+            except:
+                response = ""
 
-    def to_write(self):
-        # contacts = self.storage.get_contacts()
-        # contacts = [u.user_id for u in contacts]
-        # print("Contacts: ", contacts)
+            try:
+                action = msg["action"]
+            except:
+                action = ""
+
+            print(msg)
+
+            if response:
+                if msg["response"] == 200 and msg["alert"] == "authenticated":
+                    print("Authentication has passed")
+                    self.__authed.set()
+                    continue
+
+                elif msg["response"] == 201 and msg["alert"] == "user added":
+                    print("New user has been added to communication")
+                    self.__authed.set()
+                    continue
+
+                elif msg["response"] == 402 and msg["alert"] == "Wrong login or password":
+                    print("Authentication denied. Wrong password or login")
+                    sys.exit()
+
+                elif msg["response"] == 202 and msg["quantity"] != 0:
+                    self.__quant = int(msg["quantity"])
+                    continue
+
+                elif msg["response"] == 202 and msg["quantity"] == 0:
+                    if self.__got_potents.is_set():
+                        self.__got_conts.set()
+                        continue
+
+                    self.__got_potents.set()
+                    continue
+
+                elif msg["response"] == 203 and msg["alert"] == "Accepted":
+                    self.__add_cont.set()
+                    continue
+
+                elif msg["response"] == 203 and msg["alert"] == "Deleted":
+                    self.__del_cont.set()
+                    continue
+
+                elif msg["response"] == 401 and msg["alert"] == "denied":
+                    self.__del_cont.set()
+                    continue
+
+
+            elif action:
+
+                if msg["action"] == "contact_list":
+                    self.storage.add_contact(msg["user_id"])
+                    self.__quant -= 1
+
+                    if self.__quant == 0:
+                        print("Available contacts: ", self.storage.get_contacts())
+                        self.__got_conts.set()
+                    continue
+
+                elif msg["action"] == "potent_list":
+                    self.__potencials.append(msg["user_id"])
+                    self.__quant -= 1
+
+                    if self.__quant == 0:
+                        print("Available users to add", self.__potencials)
+                        self.__got_potents.set()
+                    continue
+
+
+
+    def contact_thread(self):
 
         while True:
             c = input("Would you like to add/del contact a/d/n: ").lower()
@@ -95,29 +170,25 @@ class Client(JIMClient, metaclass=MetaClient):
                 user = input("Enter user name to add: ").title()
 
                 self.sock.send(self.add_contact(user).encode("ascii"))
+                self.__add_cont.wait()
 
-                # # conf = self.sock.recv(1024).decode("ascii")
-                # conf = json.loads(conf)
-                # print("add", conf)
-                # if conf["response"] == 202:
-                #     self.storage.add_contact(user)
-                # else:
-                #     print("Can't add contact.")
+                self.storage.add_contact(user)
+                print("Available contacts: ", self.storage.get_contacts())
+
+
 
             elif c == "d":
                 user = input("Enter user name to delete: ").title()
 
-                self.sock.send(self.add_contact(user).encode("ascii"))
+                self.sock.send(self.del_contact(user).encode("ascii"))
 
-                # conf = self.sock.recv(1024).decode("ascii")
-                # conf = json.loads(conf)
-                #
-                # if conf["response"] == 202:
-                #     self.storage.del_contact(user)
-                # else:
-                #     print("Can't delete contact.")
+                self.__del_cont.wait()
+                self.storage.del_contact(user)
+                print("Available contacts: ", self.storage.get_contacts())
+
 
             elif c == "n":
+                self.__contacts.set()
                 break
 
             else:
@@ -125,45 +196,37 @@ class Client(JIMClient, metaclass=MetaClient):
 
 
 
+    def write_thread(self):
+
         while True:
-            # self.lock.release()
-            # send_to = input("To: ")
-            # msg = input("Message: ")
-            #
-            #
-            # if msg == "quit" or send_to == "quit":
-            #     self.sock.close()
-            #     break
-            #
-            # try:
-            #     # self.lock.acquire()
-            #     self.sock.send(self.to_user(send_to, msg).encode("ascii"))
-            #     # self.lock.release()
-            #     self.lock.acquire()
-            # except:
-            #     print("The message haven't send")
+            if self.__authed is True:
 
-            sockets_list = [sys.stdin, self.sock]
+                if self.__msg != "" and self.__send_to != "":
+                    try:
+                        self.sock.send(self.to_user(self.__send_to, self.__msg).encode("ascii"))
+                        self.__msg = ""
+                        self.__send_to = ""
+                    except:
+                        print("The message haven't send")
 
-            read_sockets, write_socket, errsocket = select(sockets_list, [], [])
 
-            for sock in read_sockets:
-                if sock == self.sock:
-                    print("one")
+    def input_thread(self):
 
-                    message = self.sock.recv(1024).encode("ascii")
-                    
-                    sys.stdout.write(message)
-                    sys.stdout.flush()
-                else:
-                    message = sys.stdin.readline()
-                    mes = self.to_user("Pavel", message).encode("ascii")
+        while True:
 
-                    self.sock.send(mes)
+            if self.__from != "" and self.__from_msg != "":
+                print("{}: {}".format(self.__from, self.__from_msg))
+                self.__from = ""
+                self.__from_msg = ""
+                continue
 
-                    sys.stdout.write("Pavel")
+            self.__send_to = input("To: ")
+            self.__msg = input("Message: ")
 
-                    sys.stdout.flush()
+            if self.__msg == "quit" or self.__send_to == "quit":
+                sys.exit()
+
+
 
 
 if __name__ == "__main__":
@@ -174,33 +237,22 @@ if __name__ == "__main__":
     try:
         addr = str(args[args.index("-a") + 1]) if args.count("-a") else "localhost"
         port = str(args[args.index("-p") + 1]) if args.count("-p") else 7777
-        # w = True if args.count("-w") else False
-        # r = True if args.count("-r") else False
         username = str(args[args.index("-un") + 1]) if args.count("-un") else "Pavel"
         pswd = str(args[args.index("-pw") + 1]) if args.count("-pw") else "PaSsw0rd"
-        #print(w, r)
+
     except:
         port = 7777
 
     address = (addr, port)
-    #print(addr, port, w, r)
-
 
     user = Client(username, pswd)
-    user.join("new")
 
     user.connect(address)
 
-    # user.get_conts()
 
 
 
 
-    # if r:
-    #     user.to_read()
-    #
-    #
-    # elif w:
-    #     user.to_write()
+
 
 

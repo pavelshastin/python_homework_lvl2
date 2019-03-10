@@ -49,7 +49,7 @@ class JIMServer:
 
     def accepted(self, msg):
         to_send = {
-            "response": 202,
+            "response": 203,
             "time": time.time(),
             "alert": msg
         }
@@ -67,7 +67,7 @@ class JIMServer:
         to_send = {
             "response": 401,
             "time": time.time(),
-            "alert": "The user is not authorized"
+            "alert": "denied"
         }
         return json.dumps(to_send)
 
@@ -119,9 +119,18 @@ class JIMServer:
         }
         return json.dumps(to_send)
 
+
     def contact(self, user_id):
         to_send = {
             "action": "contact_list",
+            "user_id": user_id
+        }
+
+        return json.dumps(to_send)
+
+    def potencial(self, user_id):
+        to_send = {
+            "action": "potent_list",
             "user_id": user_id
         }
 

@@ -24,36 +24,71 @@ class MessageHandler(JIMServer):
 
             if msg["action"] == "add_contact":
                 add = self.storage.add_contact(msg["user_id"], msg["from"])
-                print("Add: ", add)
+
                 if add:
-                    return self.accept("Accepted")
+                    return self.accepted("Accepted")
+                else:
+                    return self.not_authed()
+
+
+            elif msg["action"] == "del_contact":
+                dell = self.storage.del_contact(msg["user_id"], msg["from"])
+                print("Delete: ", dell)
+                if dell:
+                    return self.accepted("Deleted")
                 else:
                     return self.not_authed()
 
 
             elif msg["action"] == "get_contacts":
 
-                conts = self.storage.get_contacts(msg["from"])
+                conts = self.storage.get_contacts(msg["user_id"])
                 cont_nums = len(conts)
 
-                yield self.cont_quantity(cont_nums)
+                def gener(cont_nums, conts):
+                    yield self.cont_quantity(cont_nums)
 
-                for cont in conts:
-                    yield self.contact(cont)
+                    for cont in conts:
+                        yield self.contact(cont)
+
+                return gener(cont_nums, conts)
+
+
+            elif msg["action"] == "get_potencials":
+
+                potents = self.storage.get_potencials(msg["user_id"])
+                pot_nums = len(potents)
+
+                def gener(pot_nums, potents):
+                    yield self.cont_quantity(pot_nums)
+
+                    for p in potents:
+                        yield self.potencial(p)
+
+                return gener(pot_nums, potents)
+
 
 
             elif msg["action"] == "msg":
-                print(__name__, msg["message"])
-                print(__name__, self.OK(msg["message"]))
+
                 return self.OK(msg["message"])
 
-            # for ch in self.chats:
-            #
-            #     if ch.name == msg["to"]:
-            #
-            #         ch.add_message(msg["message"], msg["from"])
-            #
-            #         return self.OK(ch.get_messages(msg["from"]))
+
+            elif msg["action"] == "authenticate":
+                user_id = msg["user"]["account"]
+                pswd = msg["user"]["password"]
+
+                if self.storage.add_user(user_id, pswd):
+
+                    return self.created("user added")
+                else:
+                    if self.storage.authenticate(user_id, pswd):
+
+                        return self.OK("authenticated")
+                    else:
+
+                        return self.wrong_cridentials()
+
 
 
         else:

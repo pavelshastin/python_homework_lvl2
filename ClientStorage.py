@@ -9,7 +9,7 @@ Base = declarative_base()
 class ContactList(Base):
     __tablename__ = "contact_list"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(String, unique=True)
 
     def __init__(self, user_id):
@@ -34,7 +34,8 @@ class MessageHistory(Base):
 class ClientStorage:
 
     def __init__(self, name):
-        eng = create_engine("sqlite:///client_{}.sqlite".format(name))
+        eng = create_engine("sqlite:///clients_dbs/client_{}.sqlite".format(name),
+                            connect_args={'check_same_thread': False})
 
         Session = sessionmaker()
         Session.configure(bind=eng)
@@ -54,13 +55,19 @@ class ClientStorage:
         except:
             self.session.add(ContactList(user_id))
             self.session.commit()
+            return True
 
 
     def del_contact(self, user_id):
-        user = self.session.query(ContactList).filter(ContactList.iser_id == user_id).one()
-        self.session.delete(user)
-        self.session.commit()
+        try:
+            user = self.session.query(ContactList).filter(ContactList.iser_id == user_id).one()
+            self.session.delete(user)
+            self.session.commit()
+            return True
+        except:
+            return False
 
 
     def get_contacts(self):
-        return self.session.query(ContactList).all()
+        q = self.session.query(ContactList).all()
+        return [r.user_id for r in q]

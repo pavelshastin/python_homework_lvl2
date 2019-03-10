@@ -37,7 +37,17 @@ class JIMClient:
     def get_contacts(self):
         to_send = {
             "action": "get_contacts",
-            "from": self.__name,
+            "user_id": self.__name,
+            "time": time.time()
+        }
+
+        return json.dumps(to_send)
+
+
+    def get_potencials(self):
+        to_send = {
+            "action": "get_potencials",
+            "user_id": self.__name,
             "time": time.time()
         }
 
