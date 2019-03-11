@@ -27,9 +27,12 @@ class Server(JIMServer, metaclass=MetaServer):
 
         self.handler = handler
         self.address = addr
-        self.client_threads = {}
+        self.clients = {}
+        self.threads = []
+        self.response = ""
         self.logger.info("Creating an instance of " + self.__class__.__name__)
 
+        self.lock = Lock()
 
     def new_listen_socket(self, address):
         s = socket(AF_INET, SOCK_STREAM)
@@ -45,7 +48,7 @@ class Server(JIMServer, metaclass=MetaServer):
     # @log(logger)
     # def read_requests(self, readables):
     #     requests = {}
-    #     print("readable", readables)
+    #
     #     for sock in readables:
     #         try:
     #
@@ -61,7 +64,7 @@ class Server(JIMServer, metaclass=MetaServer):
     #             self.logger.error(str(e))
     #
     #     return requests
-
+    #
     # @log(logger)
     # def write_response(self, requests, writables):
     #     print(__name__, "--------------")
@@ -89,14 +92,42 @@ class Server(JIMServer, metaclass=MetaServer):
     #                 self.logger.error(str(e))
 
 
-    def thread_socket(self, conn, addr):
-        size=1024
+    def write_socket(self, conn, addr):
 
         while True:
+
+            if self.response != "":
+                self.lock.acquire()
+                if isinstance(self.response, types.GeneratorType):
+                    for i in self.response:
+                        time.sleep(0.2)
+                        conn.send(i.encode("ascii"))
+                else:
+                    conn.send(self.response.encode("ascii"))
+
+                self.response = ""
+                self.lock.release()
+
+
+    def main_socket(self, conn, addr):
+        size = 1024
+        while True:
+
             request = json.loads(conn.recv(size).decode("ascii"))
 
+            print("request", request)
+
             response = self.handler.handle_request(request)
-            # response = json.dumps(request)
+
+            try:
+                print("try_request", request)
+                user_id = request["user"]["account"]
+                print("User_id", user_id, response["alert"])
+                if response["alert"] == "authenticated":
+                    self.clients[user_id] = conn
+                    print(__name__, user_id, conn, self.clients)
+            except:
+                pass
 
             if isinstance(response, types.GeneratorType):
                 for i in response:
@@ -106,22 +137,29 @@ class Server(JIMServer, metaclass=MetaServer):
                 conn.send(response.encode("ascii"))
 
 
+
+
+
     def run(self):
         sock = self.new_listen_socket(self.address)
 
         while True:
             conn, addr = sock.accept()
-            thread = Thread(target=self.thread_socket, args=(conn, addr))
 
-            self.client_threads.update({conn: thread})
+            main_thread = Thread(target=self.main_socket, args=(conn, addr))
+            main_thread.daemon = True
+            main_thread.start()
 
-            try:
-                thread.start()
-            except:
-                print("Thread did not start")
+            write_thread = Thread(target=self.write_socket, args=(conn, addr))
+            write_thread.daemon = True
+            write_thread.start()
 
-        for t in self.client_threads.values():
+            self.threads.append(main_thread)
+            self.threads.append(write_thread)
+
+        for t in self.threads:
             t.join()
+
 
         # while True:
         #     try:

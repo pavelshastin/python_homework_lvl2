@@ -1,0 +1,128 @@
+2019-03-11 06:57:34,152 INFO       server __init__ Creating an instance of Server
+2019-03-11 06:57:34,153 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 07:01:12,392 INFO       server __init__ Creating an instance of Server
+2019-03-11 07:01:12,393 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 07:49:30,603 INFO       server __init__ Creating an instance of Server
+2019-03-11 07:49:30,604 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 08:30:48,452 INFO       server __init__ Creating an instance of Server
+2019-03-11 08:30:48,452 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 08:31:15,586 INFO       server run Connection with ('127.0.0.1', 51017)
+2019-03-11 08:31:57,450 INFO       server __init__ Creating an instance of Server
+2019-03-11 08:31:57,451 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 08:32:25,174 INFO       server run Connection with ('127.0.0.1', 51024)
+2019-03-11 08:32:38,931 INFO       server __init__ Creating an instance of Server
+2019-03-11 08:32:38,946 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 08:33:51,619 INFO       server run Connection with ('127.0.0.1', 51031)
+2019-03-11 08:46:05,387 INFO       server __init__ Creating an instance of Server
+2019-03-11 08:46:05,387 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:07:20,399 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:07:20,400 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:09:10,168 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:09:10,169 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:10:01,169 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:10:01,170 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:11:13,013 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:11:13,013 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:12:16,214 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:12:16,215 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:13:36,861 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:13:36,862 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 10:16:34,857 INFO       server __init__ Creating an instance of Server
+2019-03-11 10:16:34,857 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:10:52,693 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:10:52,694 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:13:06,799 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:13:06,800 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:17:57,180 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:17:57,181 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:19:58,298 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:19:58,299 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:20:36,247 INFO       server run Connection with ('127.0.0.1', 59620)
+2019-03-11 13:21:51,157 INFO       server run Connection with ('127.0.0.1', 59625)
+2019-03-11 13:21:51,175 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:21:51,175 INFO       server read_requests Client 416 ('127.0.0.1', 59620) dropped connection
+2019-03-11 13:21:51,176 INFO       log_config logged read_requests result {}
+2019-03-11 13:23:35,498 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:23:35,499 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:23:48,430 INFO       server run Connection with ('127.0.0.1', 59626)
+2019-03-11 13:24:08,718 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:24:08,719 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:24:16,184 INFO       server run Connection with ('127.0.0.1', 59627)
+2019-03-11 13:24:16,423 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:24:16,425 INFO       log_config logged read_requests result {<socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59627)>: '{"response": 200, "time": 1552299856.425957, "alert": "authenticated"}'}
+2019-03-11 13:24:16,426 INFO       log_config logged Start write_response. Caller run
+2019-03-11 13:24:16,427 INFO       log_config logged write_response result None
+2019-03-11 13:24:16,630 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:24:16,637 INFO       log_config logged read_requests result {<socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59627)>: <generator object MessageHandler.handle_request.<locals>.gener at 0x0000022F2E25E5E8>}
+2019-03-11 13:24:16,640 INFO       log_config logged Start write_response. Caller run
+2019-03-11 13:24:16,842 ERROR      server write_response 'str' object has no attribute 'enconde'
+2019-03-11 13:24:16,843 INFO       log_config logged write_response result None
+2019-03-11 13:24:51,232 INFO       server run Connection with ('127.0.0.1', 59629)
+2019-03-11 13:24:51,434 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:24:51,439 INFO       log_config logged read_requests result {<socket.socket fd=688, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59629)>: '{"response": 200, "time": 1552299891.4398193, "alert": "authenticated"}'}
+2019-03-11 13:24:51,442 INFO       log_config logged Start write_response. Caller run
+2019-03-11 13:24:51,443 ERROR      server write_response <socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59627)>
+2019-03-11 13:24:51,444 INFO       log_config logged write_response result None
+2019-03-11 13:24:51,648 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:24:51,653 INFO       log_config logged read_requests result {<socket.socket fd=688, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59629)>: <generator object MessageHandler.handle_request.<locals>.gener at 0x0000022F2E25E570>}
+2019-03-11 13:24:51,656 INFO       log_config logged Start write_response. Caller run
+2019-03-11 13:24:51,657 ERROR      server write_response <socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59627)>
+2019-03-11 13:24:51,858 ERROR      server write_response 'str' object has no attribute 'enconde'
+2019-03-11 13:24:51,858 INFO       log_config logged write_response result None
+2019-03-11 13:25:01,031 INFO       server run Connection with ('127.0.0.1', 59630)
+2019-03-11 13:25:01,234 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:25:01,240 INFO       log_config logged read_requests result {<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59630)>: '{"response": 200, "time": 1552299901.2393126, "alert": "authenticated"}'}
+2019-03-11 13:25:01,242 INFO       log_config logged Start write_response. Caller run
+2019-03-11 13:25:01,243 ERROR      server write_response <socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59627)>
+2019-03-11 13:25:01,244 ERROR      server write_response <socket.socket fd=688, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59629)>
+2019-03-11 13:25:01,245 INFO       log_config logged write_response result None
+2019-03-11 13:25:01,449 INFO       log_config logged Start read_requests. Caller run
+2019-03-11 13:25:01,454 INFO       log_config logged read_requests result {<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59630)>: <generator object MessageHandler.handle_request.<locals>.gener at 0x0000022F2E25E5E8>}
+2019-03-11 13:25:01,457 INFO       log_config logged Start write_response. Caller run
+2019-03-11 13:25:01,458 ERROR      server write_response <socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59627)>
+2019-03-11 13:25:01,459 ERROR      server write_response <socket.socket fd=688, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59629)>
+2019-03-11 13:25:01,659 ERROR      server write_response 'str' object has no attribute 'enconde'
+2019-03-11 13:25:01,659 INFO       log_config logged write_response result None
+2019-03-11 13:53:07,974 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:53:07,975 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 13:56:34,117 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:56:50,391 INFO       server __init__ Creating an instance of Server
+2019-03-11 13:56:50,392 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:00:02,310 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:00:02,311 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:42:50,011 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:42:50,012 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:43:51,936 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:43:51,937 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:44:50,990 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:44:50,994 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:46:00,474 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:46:00,475 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:49:26,373 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:49:26,374 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 14:50:21,847 INFO       server __init__ Creating an instance of Server
+2019-03-11 14:50:21,848 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:08:45,045 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:08:45,046 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:11:38,459 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:11:38,459 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:12:32,267 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:12:32,268 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:13:24,523 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:13:24,524 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:15:48,847 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:15:48,848 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:16:42,018 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:16:42,018 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:17:33,768 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:17:33,769 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:20:10,306 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:20:10,307 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:21:39,225 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:21:39,226 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:23:07,094 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:23:07,094 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:26:30,422 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:26:30,423 INFO       server new_listen_socket Server is listening on  port 7777
+2019-03-11 15:28:51,803 INFO       server __init__ Creating an instance of Server
+2019-03-11 15:28:51,803 INFO       server new_listen_socket Server is listening on  port 7777

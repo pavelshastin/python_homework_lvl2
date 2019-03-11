@@ -27,17 +27,15 @@ class History(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     time = Column(DateTime, default=func.now())
     _from = Column(String)
-    _from_ip = Column(String)
     _to = Column(String)
-    _to_ip = Column(String)
     message = Column(String)
 
-    def __init__(self, _from, _from_ip, _to, _to_ip, message):
+    def __init__(self, _from,  _to, message):
         self._from = _from
-        self._from_ip = _from_ip
         self._to = _to
-        self._to_ip = _to_ip
         self.message = message
+
+
 
 class Contacts(Base):
     __tablename__ = "contacts"

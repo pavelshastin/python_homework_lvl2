@@ -1,22 +1,19 @@
-import json
-
-from Chat import Chat
+# from Chat import Chat
 from ServerStorage import ServerStorage
 from JIMServer import JIMServer
 
 class MessageHandler(JIMServer):
     def __init__(self):
-        self.chats = []
         self.storage = ServerStorage()
 
-    def add_chat(self, chat):
-        if isinstance(chat, Chat):
-            if chat.name in self.chats:
-                raise ValueError("The chat with given name already exists")
-            else:
-                self.chats.append(chat)
-        else:
-            raise TypeError("The given argument is not instance of Chat")
+    # def add_chat(self, chat):
+    #     if isinstance(chat, Chat):
+    #         if chat.name in self.chats:
+    #             raise ValueError("The chat with given name already exists")
+    #         else:
+    #             self.chats.append(chat)
+    #     else:
+    #         raise TypeError("The given argument is not instance of Chat")
 
 
     def handle_request(self, msg):
@@ -71,7 +68,7 @@ class MessageHandler(JIMServer):
 
             elif msg["action"] == "msg":
 
-                return self.OK(msg["message"])
+                return self.message(msg["message"])
 
 
             elif msg["action"] == "authenticate":
@@ -88,7 +85,6 @@ class MessageHandler(JIMServer):
                     else:
 
                         return self.wrong_cridentials()
-
 
 
         else:

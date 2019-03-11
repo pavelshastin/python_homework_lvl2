@@ -143,3 +143,14 @@ class JIMServer:
         }
 
         return json.dumps(to_send)
+
+    def message(self, to, _from, msg):
+        to_send = {
+            "action": "msg",
+            "time": time.time(),
+            "from": _from,
+            "to": to,
+            "message": msg
+        }
+
+        return json.dumps(to_send)

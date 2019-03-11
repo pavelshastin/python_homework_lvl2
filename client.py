@@ -65,8 +65,6 @@ class Client(JIMClient, metaclass=MetaClient):
         self.th_cont = Thread(target=self.contact_thread)
         self.th_cont.daemon = True
         self.th_cont.start()
-        self.th_cont.join()
-
 
         self.th_write = Thread(target=self.write_thread)
         self.th_write.daemon = True
@@ -76,6 +74,9 @@ class Client(JIMClient, metaclass=MetaClient):
         self.th_inpt.daemon = True
         self.th_inpt.start()
 
+        self.th_cont.join()
+        self.th_write.join()
+        self.th_inpt.join()
 
 
 
@@ -101,6 +102,11 @@ class Client(JIMClient, metaclass=MetaClient):
 
             if response:
                 if msg["response"] == 200 and msg["alert"] == "authenticated":
+                    print("Authentication has passed")
+                    self.__authed.set()
+                    continue
+
+                elif msg["response"] == 200 and msg["alert"] != "authenticated":
                     print("Authentication has passed")
                     self.__authed.set()
                     continue
@@ -197,6 +203,7 @@ class Client(JIMClient, metaclass=MetaClient):
 
 
     def write_thread(self):
+        self.__contacts.wait()
 
         while True:
             if self.__authed is True:
@@ -211,6 +218,7 @@ class Client(JIMClient, metaclass=MetaClient):
 
 
     def input_thread(self):
+        self.__contacts.wait()
 
         while True:
 
