@@ -21,22 +21,6 @@ class Clients(Base):
         self.password = pswd
 
 
-class History(Base):
-    __tablename__ = "history"
-
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    time = Column(DateTime, default=func.now())
-    _from = Column(String)
-    _to = Column(String)
-    message = Column(String)
-
-    def __init__(self, _from,  _to, message):
-        self._from = _from
-        self._to = _to
-        self.message = message
-
-
-
 class Contacts(Base):
     __tablename__ = "contacts"
 
@@ -64,9 +48,6 @@ class ServerStorage:
         self.session = Session()
 
         Base.metadata.create_all(eng)
-
-    def get_user(self, user_id):
-        pass
 
 
     def add_user(self, user_id, info):
@@ -103,13 +84,6 @@ class ServerStorage:
             return [row.user_id for row in q]
         except:
             return False
-
-
-    def get_messages(self, user_id):
-        pass
-
-    def get_messages_to_user(self, user_id, _to):
-        pass
 
 
     def get_contacts(self, user_id):

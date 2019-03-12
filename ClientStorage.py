@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, func
+from sqlalchemy import create_engine, func, desc
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import sessionmaker, relationship
@@ -16,18 +16,19 @@ class ContactList(Base):
         self.user_id = user_id
 
 
-class MessageHistory(Base):
-    __tablename__ = "message_history"
+class Messages(Base):
+    __tablename__ = "messages"
 
     id = Column(Integer, primary_key=True)
     time = Column(DateTime, default=func.now())
-    user_id = Column(String, ForeignKey('contact_list.id'))
+    _from = Column(String)
+    _to = Column(String)
     mess = Column(String)
 
 
-    def __init__(self, time, user_id, mess):
-        self.time = time
-        self.user_id = user_id
+    def __init__(self, _from, _to, mess):
+        self._from = _from
+        self._to = _to
         self.mess = mess
 
 
@@ -44,9 +45,14 @@ class ClientStorage:
         Base.metadata.create_all(eng)
 
 
-    def add_message(self, dt, user_id, mess):
-        self.session.add(MessageHistory(dt, user_id, mess))
+    def add_message(self, _from, _to, mess):
+        self.session.add(Messages(_from, _to, mess))
         self.session.commit()
+
+
+    def get_messages(self, num):
+        return self.session.query(Messages).order_by(desc(Messages.id)).limit(num).all()
+
 
     def add_contact(self, user_id):
         try:

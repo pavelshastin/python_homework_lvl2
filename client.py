@@ -22,8 +22,6 @@ class Client(JIMClient, metaclass=MetaClient):
         self.__password = password
         self.__msg = ""
         self.__send_to = ""
-        self.__from = ""
-        self.__from_msg = ""
         self.__potencials = []
         self.__quant = -1
 
@@ -39,11 +37,15 @@ class Client(JIMClient, metaclass=MetaClient):
 
 
 
-
-
     def connect(self, address):
         self.sock = socket(AF_INET, SOCK_STREAM)
         self.sock.connect(address)
+
+        last_messages = self.storage.get_messages(10)
+
+        print('Last messages: ')
+        for mess in last_messages:
+            print("From: ", mess._from, "To: ", mess._to, "Message: ", mess.mess)
 
         self.th_read = Thread(target=self.read_thread)
         self.th_read.daemon = True
@@ -98,7 +100,7 @@ class Client(JIMClient, metaclass=MetaClient):
             except:
                 action = ""
 
-            print(msg)
+            # print(msg)
 
             if response:
                 if msg["response"] == 200 and msg["alert"] == "authenticated":
@@ -165,6 +167,12 @@ class Client(JIMClient, metaclass=MetaClient):
                         self.__got_potents.set()
                     continue
 
+                elif msg["action"] == "msg":
+                    print("From: {}: {}".format(msg["from"], msg["message"]), end="\nTo: ")
+
+                    self.storage.add_message(msg["from"], msg["to"], msg["message"])
+                    continue
+
 
 
     def contact_thread(self):
@@ -192,7 +200,6 @@ class Client(JIMClient, metaclass=MetaClient):
                 self.storage.del_contact(user)
                 print("Available contacts: ", self.storage.get_contacts())
 
-
             elif c == "n":
                 self.__contacts.set()
                 break
@@ -206,11 +213,14 @@ class Client(JIMClient, metaclass=MetaClient):
         self.__contacts.wait()
 
         while True:
-            if self.__authed is True:
+            if self.__authed.is_set():
 
                 if self.__msg != "" and self.__send_to != "":
                     try:
+
                         self.sock.send(self.to_user(self.__send_to, self.__msg).encode("ascii"))
+
+                        self.storage.add_message(self.__name, self.__send_to, self.__msg)
                         self.__msg = ""
                         self.__send_to = ""
                     except:
@@ -221,13 +231,6 @@ class Client(JIMClient, metaclass=MetaClient):
         self.__contacts.wait()
 
         while True:
-
-            if self.__from != "" and self.__from_msg != "":
-                print("{}: {}".format(self.__from, self.__from_msg))
-                self.__from = ""
-                self.__from_msg = ""
-                continue
-
             self.__send_to = input("To: ")
             self.__msg = input("Message: ")
 
@@ -246,7 +249,7 @@ if __name__ == "__main__":
         addr = str(args[args.index("-a") + 1]) if args.count("-a") else "localhost"
         port = str(args[args.index("-p") + 1]) if args.count("-p") else 7777
         username = str(args[args.index("-un") + 1]) if args.count("-un") else "Pavel"
-        pswd = str(args[args.index("-pw") + 1]) if args.count("-pw") else "PaSsw0rd"
+        pswd = str(args[args.index("-pw") + 1]) if args.count("-pw") else "Password"
 
     except:
         port = 7777

@@ -92,18 +92,22 @@ class Server(JIMServer, metaclass=MetaServer):
     #                 self.logger.error(str(e))
 
 
-    def write_socket(self, conn, addr):
+    def write_socket(self):
 
         while True:
 
             if self.response != "":
+                # print("write_socket", self.response)
+                response = json.loads(self.response)
+                to = response["to"]
+                conn = self.clients[to]
+
                 self.lock.acquire()
-                if isinstance(self.response, types.GeneratorType):
-                    for i in self.response:
-                        time.sleep(0.2)
-                        conn.send(i.encode("ascii"))
-                else:
+                # print("write_socket", conn, to, self.response)
+                try:
                     conn.send(self.response.encode("ascii"))
+                except:
+                    pass
 
                 self.response = ""
                 self.lock.release()
@@ -120,21 +124,34 @@ class Server(JIMServer, metaclass=MetaServer):
             response = self.handler.handle_request(request)
 
             try:
-                print("try_request", request)
-                user_id = request["user"]["account"]
-                print("User_id", user_id, response["alert"])
-                if response["alert"] == "authenticated":
+                #Если клиент прошел аутенфикацию, то добавляем его в список действующих подключений
+                if response.find("authenticated") != -1:
+
+                    user_id = request["user"]["account"]
                     self.clients[user_id] = conn
-                    print(__name__, user_id, conn, self.clients)
-            except:
+                    # print(__name__, self.clients)
+
+                #Если в ответе есть атрибут to, то значит сообщение напвавляется конкретному пользователю
+                #Управление переходт к потоку write_thread через переменную self.response
+                elif response.find("\"to\"") != -1:
+                    # print("main_response", response)
+                    self.response = response
+                    continue
+
+            except AttributeError:
                 pass
+
 
             if isinstance(response, types.GeneratorType):
                 for i in response:
                     time.sleep(0.2)
+                    # print("main_socket generator", response)
                     conn.send(i.encode("ascii"))
+                    # print("main_socket generator end sending")
             else:
+                # print("main_socket", response)
                 conn.send(response.encode("ascii"))
+                # print("main_socket end sending")
 
 
 
@@ -150,7 +167,7 @@ class Server(JIMServer, metaclass=MetaServer):
             main_thread.daemon = True
             main_thread.start()
 
-            write_thread = Thread(target=self.write_socket, args=(conn, addr))
+            write_thread = Thread(target=self.write_socket)
             write_thread.daemon = True
             write_thread.start()
 
