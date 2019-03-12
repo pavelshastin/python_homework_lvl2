@@ -67,8 +67,11 @@ class MessageHandler(JIMServer):
 
 
             elif msg["action"] == "msg":
+                _from = msg["from"]
+                to = msg["to"]
+                message = msg["message"]
 
-                return self.message(msg["message"])
+                return self.message(to, _from, message)
 
 
             elif msg["action"] == "authenticate":

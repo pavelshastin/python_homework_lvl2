@@ -92,18 +92,18 @@ class Server(JIMServer, metaclass=MetaServer):
     #                 self.logger.error(str(e))
 
 
-    def write_socket(self, conn, addr):
+    def write_socket(self):
 
         while True:
 
             if self.response != "":
+                response = json.loads(self.response)
+                to = response["to"]
+                conn = self.clients[to]
+
                 self.lock.acquire()
-                if isinstance(self.response, types.GeneratorType):
-                    for i in self.response:
-                        time.sleep(0.2)
-                        conn.send(i.encode("ascii"))
-                else:
-                    conn.send(self.response.encode("ascii"))
+                print(__name__, conn, to, self.response)
+                conn.send(self.response.encode("ascii"))
 
                 self.response = ""
                 self.lock.release()
@@ -119,13 +119,17 @@ class Server(JIMServer, metaclass=MetaServer):
 
             response = self.handler.handle_request(request)
 
+            #Если клиент прошел аутенфикацию, то добавляем его в список действующих подключений
             try:
-                print("try_request", request)
                 user_id = request["user"]["account"]
-                print("User_id", user_id, response["alert"])
-                if response["alert"] == "authenticated":
+
+                if response.find("authenticated") != -1:
                     self.clients[user_id] = conn
-                    print(__name__, user_id, conn, self.clients)
+                    #print(__name__, self.clients)
+
+                elif response.find("\'to\'"):
+                    self.response = response
+                    continue
             except:
                 pass
 
@@ -150,7 +154,7 @@ class Server(JIMServer, metaclass=MetaServer):
             main_thread.daemon = True
             main_thread.start()
 
-            write_thread = Thread(target=self.write_socket, args=(conn, addr))
+            write_thread = Thread(target=self.write_socket)
             write_thread.daemon = True
             write_thread.start()
 
